@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <!-- ═══════════════════════════════════════════════════════
+       EagleNest Academy – Student Life
+       ═══════════════════════════════════════════════════════ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Life | EagleNest Academy – Sports, Clubs, Arts &amp; Campus Life</title>
+  <meta name="description" content="Discover student life at EagleNest Academy — sports teams, music and drama, science club, scouts, creative arts, daily meals, transport, wellbeing, and our vibrant photo gallery.">
+  <meta name="keywords" content="EagleNest student life, CBC school activities Nairobi, school sports Kenya, school clubs Nairobi, student wellbeing Kenya">
+  <meta name="author" content="EagleNest Academy">
+  <link rel="canonical" href="https://www.eaglenest.ac.ke/student-life.html">
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="EagleNest Academy">
+  <meta property="og:title"       content="Student Life – EagleNest Academy">
+  <meta property="og:description" content="Sports, music, drama, clubs, arts, meals, and community. Life at EagleNest goes far beyond the classroom.">
+  <meta property="og:image"       content="assets/images/gallery/sports-day.jpg">
+  <meta property="og:url"         content="https://www.eaglenest.ac.ke/student-life.html">
+  <meta name="twitter:card"       content="summary_large_image">
+  <meta name="twitter:title"      content="Student Life – EagleNest Academy, Nairobi">
+  <meta name="twitter:description" content="Sports, music, clubs, arts, wellbeing and more.">
+  <meta name="twitter:image"      content="assets/images/gallery/sports-day.jpg">
+  <link rel="icon"             href="assets/images/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png" sizes="180x180">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="assets/js/tailwind-config.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <style>
+    .banner-overlay{background:linear-gradient(110deg,rgba(15,42,67,.88) 0%,rgba(15,42,67,.55) 55%,rgba(34,197,94,.15) 100%)}
+    /* Masonry */
+    #photo-gallery{columns:2;column-gap:.75rem}
+    @media(min-width:640px){#photo-gallery{columns:3}}
+    @media(min-width:1024px){#photo-gallery{columns:4}}
+    .gallery-item{break-inside:avoid;margin-bottom:.75rem;border-radius:.75rem;overflow:hidden;cursor:zoom-in;position:relative;background:linear-gradient(135deg,#E0F2FE,#DCFCE7);transition:opacity .3s ease,transform .3s ease}
+    .gallery-item:focus-visible{outline:none;box-shadow:0 0 0 3px #F0F9FF,0 0 0 5px #0EA5E9}
+    .gallery-item::after{content:'';position:absolute;inset:0;background:rgba(15,42,67,0);transition:background .25s ease;pointer-events:none}
+    .gallery-item:hover::after,.gallery-item:focus-visible::after{background:rgba(15,42,67,.28)}
+    .gallery-item .zoom-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(.6);opacity:0;transition:opacity .25s ease,transform .25s ease;z-index:2;pointer-events:none}
+    .gallery-item:hover .zoom-icon,.gallery-item:focus-visible .zoom-icon{opacity:1;transform:translate(-50%,-50%) scale(1)}
+    .gallery-hidden{opacity:0;transform:scale(.9);pointer-events:none;height:0!important;margin-bottom:0!important;overflow:hidden}
+    .gallery-item img{display:block;width:100%;transition:opacity .4s ease,transform .4s ease}
+    .gallery-item img:not(.lazy-loaded){opacity:.4}
+    .gallery-item img.lazy-loaded{opacity:1}
+    .gallery-item:hover img{transform:scale(1.05)}
+    /* Lightbox */
+    #lightbox{background:rgba(10,18,30,.95);backdrop-filter:blur(6px)}
+    #lb-img{transition:opacity .2s ease;max-height:80vh;max-width:min(90vw,1100px);object-fit:contain}
+    /* Carousel */
+    .carousel-track{display:flex;transition:transform .45s cubic-bezier(.4,0,.2,1)}
+    .carousel-slide{flex:0 0 100%}
+    @media(min-width:768px){.carousel-slide{flex:0 0 50%}}
+    @media(min-width:1024px){.carousel-slide{flex:0 0 33.333%}}
+    /* Activity card zoom */
+    .activity-card img{transition:transform .4s ease}
+    .activity-card:hover img{transform:scale(1.06)}
+  </style>
+</head>
+<body class="font-body text-ink bg-white antialiased">
+  <div id="site-header"></div>
+  <main id="main-content" tabindex="-1">
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  1. BANNER                                       ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section aria-label="Page header" class="relative h-80 md:h-96 flex items-end overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="assets/images/gallery/sports-day.jpg"
+             alt="EagleNest Academy students celebrating on the sports field during an inter-house athletics day"
+             class="w-full h-full object-cover object-center" loading="eager">
+        <div class="absolute inset-0 banner-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+        <nav aria-label="Breadcrumb" class="mb-3">
+          <ol class="flex items-center gap-2 text-xs text-sky-200" role="list">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li aria-hidden="true"><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></li>
+            <li><span class="text-white font-medium" aria-current="page">Student Life</span></li>
+          </ol>
+        </nav>
+        <h1 class="font-heading text-white text-4xl sm:text-5xl">Student Life</h1>
+        <p class="text-sky-100 mt-2 text-base max-w-xl">Learning doesn't stop when the bell rings. Discover the vibrant world that makes EagleNest a place students love to be.</p>
+      </div>
+      <div class="absolute bottom-0 inset-x-0" aria-hidden="true">
+        <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full" preserveAspectRatio="none"><path d="M0 48L480 16L960 40L1440 8V48H0Z" fill="white"/></svg>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  2. INTRO                                        ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="intro" aria-labelledby="intro-heading" class="py-16 px-4 bg-white">
+      <div class="max-w-4xl mx-auto text-center reveal">
+        <span class="inline-block text-leaf-600 text-xs font-semibold uppercase tracking-widest mb-3">More Than a Classroom</span>
+        <h2 id="intro-heading" class="font-heading text-ink mb-5">A Whole Life, Not Just a Timetable</h2>
+        <p class="text-ink/75 leading-relaxed mb-4 max-w-3xl mx-auto">At EagleNest, the friendships formed on the football pitch, the confidence built on a stage, and the curiosity sparked in a science club are just as important as the grade in a report book. Our CBC curriculum requires learners to develop practical competencies, life skills, and social-emotional resilience — and our rich student life programmes are designed to deliver exactly that.</p>
+        <p class="text-ink/75 leading-relaxed max-w-3xl mx-auto">Every EagleNest learner participates in at least one co-curricular activity per week. With over <strong>[REPLACE: 20]</strong> clubs, sports, and artistic groups to choose from, there is something for every personality and passion.</p>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  3. ACTIVITY CARDS GRID                          ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="activities" aria-labelledby="activities-heading" class="py-16 px-4 bg-brand-gradient-soft">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+          <span class="inline-block text-sky-600 text-xs font-semibold uppercase tracking-widest mb-3">Co-Curricular Activities</span>
+          <h2 id="activities-heading" class="font-heading text-ink mb-3">Something for Every Eagle</h2>
+          <p class="text-ink/70 leading-relaxed">Six pillars of student life — every one aligned to CBC's holistic development framework.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 reveal-stagger">
+
+          <!-- Sports -->
+          <article class="activity-card rounded-2xl overflow-hidden shadow-soft bg-white border border-sky-50 flex flex-col" aria-labelledby="act-sports">
+            <div class="aspect-[16/9] overflow-hidden"><img src="assets/images/gallery/sports-day.jpg" alt="EagleNest students competing in football during an inter-house sports day" loading="lazy" class="w-full h-full object-cover lazy-loaded"></div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-sky-100 flex items-center justify-center shrink-0 text-xl" aria-hidden="true">⚽</div>
+                <h3 id="act-sports" class="font-heading text-ink text-lg">Sports</h3>
+              </div>
+              <p class="text-ink/70 text-sm leading-relaxed mb-4 flex-1">Football, volleyball, basketball, athletics, swimming, and netball. Our teams compete at zone, county, and national level. Sports build teamwork, resilience, and physical health — all core CBC outcomes.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full font-medium">Football</span>
+                <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full font-medium">Volleyball</span>
+                <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full font-medium">Athletics</span>
+                <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full font-medium">Swimming</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Music & Drama -->
+          <article class="activity-card rounded-2xl overflow-hidden shadow-soft bg-white border border-leaf-50 flex flex-col" aria-labelledby="act-music">
+            <div class="aspect-[16/9] overflow-hidden"><img src="assets/images/gallery/music-class.jpg" alt="EagleNest choir performing at the Kenya National Music Festival" loading="lazy" class="w-full h-full object-cover lazy-loaded"></div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-leaf-100 flex items-center justify-center shrink-0 text-xl" aria-hidden="true">🎭</div>
+                <h3 id="act-music" class="font-heading text-ink text-lg">Music &amp; Drama</h3>
+              </div>
+              <p class="text-ink/70 text-sm leading-relaxed mb-4 flex-1">Our award-winning choir has won Gold at the Kenya National Music Festival. Drama productions, spoken word, and traditional dance are performed termly. Every learner discovers their creative voice.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full font-medium">Choir</span>
+                <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full font-medium">Drama Club</span>
+                <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full font-medium">Dance</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Clubs -->
+          <article class="activity-card rounded-2xl overflow-hidden shadow-soft bg-white border border-sky-50 flex flex-col" aria-labelledby="act-clubs">
+            <div class="aspect-[16/9] overflow-hidden"><img src="assets/images/gallery/debate-club.jpg" alt="EagleNest debate club members at an inter-school competition" loading="lazy" class="w-full h-full object-cover lazy-loaded"></div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-sky-100 flex items-center justify-center shrink-0 text-xl" aria-hidden="true">💬</div>
+                <h3 id="act-clubs" class="font-heading text-ink text-lg">Clubs &amp; Societies</h3>
+              </div>
+              <p class="text-ink/70 text-sm leading-relaxed mb-4 flex-1">Debate, Reading, Environmental, Business, ICT, Photography, and Community Service clubs meet weekly. All clubs are teacher-supervised and several compete nationally.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full font-medium">Debate</span>
+                <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full font-medium">ICT</span>
+                <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full font-medium">Environment</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Scouts -->
+          <article class="activity-card rounded-2xl overflow-hidden shadow-soft bg-white border border-leaf-50 flex flex-col" aria-labelledby="act-scouts">
+            <div class="aspect-[16/9] overflow-hidden"><img src="assets/images/gallery/science-fair.jpg" alt="EagleNest Scout troop during a community service day" loading="lazy" class="w-full h-full object-cover lazy-loaded"></div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-leaf-100 flex items-center justify-center shrink-0 text-xl" aria-hidden="true">⛺</div>
+                <h3 id="act-scouts" class="font-heading text-ink text-lg">Scouts &amp; Community</h3>
+              </div>
+              <p class="text-ink/70 text-sm leading-relaxed mb-4 flex-1">Kenya Scouts Association registered troop. Camping, first aid, leadership, and community service. Scouts builds citizenship and Ubuntu — a core CBC value at EagleNest.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full font-medium">Scouts</span>
+                <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full font-medium">Girl Guides</span>
+                <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full font-medium">Community Service</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Science -->
+          <article class="activity-card rounded-2xl overflow-hidden shadow-soft bg-white border border-sky-50 flex flex-col" aria-labelledby="act-science">
+            <div class="aspect-[16/9] overflow-hidden"><img src="assets/images/gallery/science-fair.jpg" alt="Grade 8 learners presenting at the EagleNest regional science fair" loading="lazy" class="w-full h-full object-cover lazy-loaded"></div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-sky-100 flex items-center justify-center shrink-0 text-xl" aria-hidden="true">🔬</div>
+                <h3 id="act-science" class="font-heading text-ink text-lg">Science &amp; STEM</h3>
+              </div>
+              <p class="text-ink/70 text-sm leading-relaxed mb-4 flex-1">Science Club, Robotics, and Coding Squad meet weekly. EagleNest teams have won the regional science fair for <strong>[REPLACE: 3]</strong> consecutive years and placed at national level.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full font-medium">Science Club</span>
+                <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full font-medium">Robotics</span>
+                <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full font-medium">Coding</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Art -->
+          <article class="activity-card rounded-2xl overflow-hidden shadow-soft bg-white border border-leaf-50 flex flex-col" aria-labelledby="act-art">
+            <div class="aspect-[16/9] overflow-hidden"><img src="assets/images/gallery/art-class.jpg" alt="Primary pupils in the EagleNest creative arts studio on a mixed-media project" loading="lazy" class="w-full h-full object-cover lazy-loaded"></div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-leaf-100 flex items-center justify-center shrink-0 text-xl" aria-hidden="true">🎨</div>
+                <h3 id="act-art" class="font-heading text-ink text-lg">Creative Arts</h3>
+              </div>
+              <p class="text-ink/70 text-sm leading-relaxed mb-4 flex-1">Painting, sculpture, batik, photography, and textile design. An end-of-year Art Exhibition showcases learner work to parents and the wider community.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full font-medium">Painting</span>
+                <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full font-medium">Photography</span>
+                <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full font-medium">Textiles</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  4. DAILY LIFE HIGHLIGHTS                        ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="daily-life" aria-labelledby="daily-heading" class="py-20 px-4 bg-ink relative overflow-hidden">
+      <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-sky-500/10 pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-leaf-500/10 pointer-events-none" aria-hidden="true"></div>
+      <div class="relative z-10 max-w-6xl mx-auto">
+        <div class="text-center mb-14 reveal">
+          <span class="inline-block text-leaf-400 text-xs font-semibold uppercase tracking-widest mb-3">Campus Life</span>
+          <h2 id="daily-heading" class="font-heading text-white mb-3">A Day in the Life of an Eagle</h2>
+          <p class="text-sky-100/80 leading-relaxed max-w-xl mx-auto">Great learning happens in safe, well-nourished, and supported environments. Here's how we look after our learners every day.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-7 reveal-stagger">
+
+          <!-- Meals -->
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-7 hover:bg-white/10 transition-colors duration-200">
+            <div class="w-14 h-14 rounded-2xl bg-sky-500/20 flex items-center justify-center mb-5 text-3xl" aria-hidden="true">🍽️</div>
+            <h3 class="font-heading text-white text-xl mb-3">Meals &amp; Nutrition</h3>
+            <p class="text-sky-100/75 text-sm leading-relaxed mb-4">A hot, nutritious lunch is available daily from our school kitchen at an additional fee. Menus are planned by a qualified nutritionist and change weekly to ensure variety and balanced micronutrients.</p>
+            <ul class="space-y-1.5 text-xs text-sky-100/65" role="list">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-leaf-400 shrink-0" aria-hidden="true"></span>Hot lunch Mon–Fri</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-leaf-400 shrink-0" aria-hidden="true"></span>Supervised mid-morning snack break</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-leaf-400 shrink-0" aria-hidden="true"></span>Allergen-aware menus available</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-leaf-400 shrink-0" aria-hidden="true"></span>Packed lunch option welcome</li>
+            </ul>
+          </div>
+
+          <!-- Transport -->
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-7 hover:bg-white/10 transition-colors duration-200">
+            <div class="w-14 h-14 rounded-2xl bg-leaf-500/20 flex items-center justify-center mb-5 text-3xl" aria-hidden="true">🚌</div>
+            <h3 class="font-heading text-white text-xl mb-3">Transport &amp; Safety</h3>
+            <p class="text-sky-100/75 text-sm leading-relaxed mb-4">School buses cover [REPLACE: key routes] in Nairobi, with GPS tracking and trained chaperones on every journey. CCTV, a guarded entrance, and an authorised-persons pick-up register protect every child.</p>
+            <ul class="space-y-1.5 text-xs text-sky-100/65" role="list">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-400 shrink-0" aria-hidden="true"></span>[REPLACE: N] bus routes across Nairobi</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-400 shrink-0" aria-hidden="true"></span>GPS-tracked vehicles + chaperones</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-400 shrink-0" aria-hidden="true"></span>CCTV campus + gated entrance</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-400 shrink-0" aria-hidden="true"></span>Extended care until 5:30 pm</li>
+            </ul>
+          </div>
+
+          <!-- Wellbeing -->
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-7 hover:bg-white/10 transition-colors duration-200">
+            <div class="w-14 h-14 rounded-2xl bg-sky-500/20 flex items-center justify-center mb-5 text-3xl" aria-hidden="true">🧠</div>
+            <h3 class="font-heading text-white text-xl mb-3">Learner Wellbeing</h3>
+            <p class="text-sky-100/75 text-sm leading-relaxed mb-4">A full-time qualified counsellor supports learners' social and emotional health. Morning check-ins, class councils, and a clear anti-bullying policy ensure every child feels safe and valued.</p>
+            <ul class="space-y-1.5 text-xs text-sky-100/65" role="list">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-leaf-400 shrink-0" aria-hidden="true"></span>Full-time school counsellor</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-leaf-400 shrink-0" aria-hidden="true"></span>Pastoral care in every classroom</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-leaf-400 shrink-0" aria-hidden="true"></span>Zero-tolerance anti-bullying policy</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-leaf-400 shrink-0" aria-hidden="true"></span>Weekly Life Skills lessons (CBC)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  5. FILTERABLE MASONRY GALLERY                   ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="gallery" aria-labelledby="gallery-heading" class="py-20 px-4 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+          <span class="inline-block text-sky-600 text-xs font-semibold uppercase tracking-widest mb-3">Photo Gallery</span>
+          <h2 id="gallery-heading" class="font-heading text-ink mb-3">Life Through the Lens</h2>
+          <p class="text-ink/70 leading-relaxed">A glimpse of everyday life at EagleNest. Click any photo to view it full size.</p>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="flex flex-wrap justify-center gap-3 mb-8 reveal"
+             role="group" aria-label="Filter gallery by category">
+          <button data-filter="all"      aria-pressed="true"  class="px-5 py-2 rounded-full text-sm font-semibold border transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">All Photos</button>
+          <button data-filter="events"   aria-pressed="false" class="px-5 py-2 rounded-full text-sm font-semibold border transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">Events</button>
+          <button data-filter="sports"   aria-pressed="false" class="px-5 py-2 rounded-full text-sm font-semibold border transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">Sports</button>
+          <button data-filter="classroom" aria-pressed="false" class="px-5 py-2 rounded-full text-sm font-semibold border transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">Classroom</button>
+          <button data-filter="facilities" aria-pressed="false" class="px-5 py-2 rounded-full text-sm font-semibold border transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">Facilities</button>
+        </div>
+
+        <!-- Screen reader count -->
+        <p id="gallery-status" role="status" aria-live="polite" class="sr-only"></p>
+
+        <!-- Masonry grid (gallery.js wires filtering + lightbox) -->
+        <div id="photo-gallery" aria-label="Photo gallery" class="reveal">
+
+          <!-- ZOOM ICON SVG (reused inline each item) -->
+          <!-- events -->
+          <div class="gallery-item" tabindex="0" data-category="events" data-caption="EagleNest Annual Science Fair — Grade 8 learners presenting [REPLACE year]">
+            <img data-src="assets/images/gallery/science-fair.jpg" src="" alt="Grade 8 learners presenting at the annual EagleNest science fair" loading="lazy">
+            <div class="zoom-icon" aria-hidden="true"><svg class="w-10 h-10 text-white drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+          </div>
+
+          <div class="gallery-item" tabindex="0" data-category="sports" data-caption="Inter-house relay race — Sports Day [REPLACE year]">
+            <img data-src="assets/images/gallery/sports-day.jpg" src="" alt="Students competing in the inter-house relay race on Sports Day" loading="lazy">
+            <div class="zoom-icon" aria-hidden="true"><svg class="w-10 h-10 text-white drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+          </div>
+
+          <div class="gallery-item" tabindex="0" data-category="classroom" data-caption="Music lesson with traditional instruments — Grade 7 [REPLACE year]">
+            <img data-src="assets/images/gallery/music-class.jpg" src="" alt="Junior Secondary students during a music lesson with traditional Kenyan instruments" loading="lazy">
+            <div class="zoom-icon" aria-hidden="true"><svg class="w-10 h-10 text-white drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+          </div>
+
+          <div class="gallery-item" tabindex="0" data-category="facilities" data-caption="EagleNest digital library — a favourite learner space [REPLACE year]">
+            <img data-src="assets/images/gallery/library.jpg" src="" alt="A learner reading in the EagleNest digital library" loading="lazy">
+            <div class="zoom-icon" aria-hidden="true"><svg class="w-10 h-10 text-white drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+          </div>
+
+          <div class="gallery-item" tabindex="0" data-category="classroom" data-caption="Creative arts session — Primary pupils painting Kenyan landscapes [REPLACE year]">
+            <img data-src="assets/images/gallery/art-class.jpg" src="" alt="Primary pupils in the EagleNest creative arts studio working on paintings" loading="lazy">
+            <div class="zoom-icon" aria-hidden="true"><svg class="w-10 h-10 text-white drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+          </div>
+
+          <div class="gallery-item" tabindex="0" data-category="events" data-caption="EagleNest debate club at the inter-school debate championship [REPLACE year]">
+            <img data-src="assets/images/gallery/debate-club.jpg" src="" alt="EagleNest debate club members during an inter-school competition" loading="lazy">
+            <div class="zoom-icon" aria-hidden="true"><svg class="w-10 h-10 text-white drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+          </div>
+
+          <!-- Repeat / additional items pointing to same placeholder paths -->
+          <div class="gallery-item" tabindex="0" data-category="sports" data-caption="Football training session — junior team [REPLACE year]">
+            <img data-src="assets/images/gallery/sports-day.jpg" src="" alt="EagleNest junior football team training on the school pitch" loading="lazy">
+            <div class="zoom-icon" aria-hidden="true"><svg class="w-10 h-10 text-white drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+          </div>
+
+          <div class="gallery-item" tabindex="0" data-category="facilities" data-caption="Science lab — Junior Secondary practical lesson [REPLACE year]">
+            <img data-src="assets/images/gallery/science-fair.jpg" src="" alt="Students working in the EagleNest science laboratory" loading="lazy">
+            <div class="zoom-icon" aria-hidden="true"><svg class="w-10 h-10 text-white drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+          </div>
+
+          <div class="gallery-item" tabindex="0" data-category="events" data-caption="End-of-year prize-giving ceremony [REPLACE year]">
+            <img data-src="assets/images/gallery/art-class.jpg" src="" alt="Learners receiving awards at the EagleNest end-of-year ceremony" loading="lazy">
+            <div class="zoom-icon" aria-hidden="true"><svg class="w-10 h-10 text-white drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+          </div>
+
+          <div class="gallery-item" tabindex="0" data-category="classroom" data-caption="ICT lesson in the 40-station computer lab [REPLACE year]">
+            <img data-src="assets/images/gallery/library.jpg" src="" alt="Learners using computers in the EagleNest ICT suite" loading="lazy">
+            <div class="zoom-icon" aria-hidden="true"><svg class="w-10 h-10 text-white drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+          </div>
+
+          <div class="gallery-item" tabindex="0" data-category="facilities" data-caption="Multi-purpose sports hall and basketball courts [REPLACE year]">
+            <img data-src="assets/images/gallery/sports-day.jpg" src="" alt="EagleNest Academy sports hall and basketball courts" loading="lazy">
+            <div class="zoom-icon" aria-hidden="true"><svg class="w-10 h-10 text-white drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+          </div>
+
+          <div class="gallery-item" tabindex="0" data-category="sports" data-caption="Volleyball team after winning the county championship [REPLACE year]">
+            <img data-src="assets/images/gallery/sports-day.jpg" src="" alt="EagleNest volleyball team celebrating their county championship win" loading="lazy">
+            <div class="zoom-icon" aria-hidden="true"><svg class="w-10 h-10 text-white drop-shadow-lg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg></div>
+          </div>
+
+        </div><!-- /#photo-gallery -->
+
+        <p class="text-center text-ink/40 text-xs mt-6">
+          [REPLACE: Add real photos to <code class="bg-ink/5 px-1 rounded">assets/images/gallery/</code> and update data-src paths above]
+        </p>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  LIGHTBOX MODAL                                  ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <div id="lightbox"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Photo lightbox"
+         aria-hidden="true"
+         class="hidden fixed inset-0 z-[9000] flex items-center justify-center px-4 py-6">
+
+      <!-- Backdrop -->
+      <div id="lb-backdrop" class="absolute inset-0" aria-hidden="true"></div>
+
+      <!-- Panel -->
+      <div class="relative z-10 flex flex-col items-center max-w-5xl w-full">
+
+        <!-- Close button -->
+        <button id="lb-close"
+                type="button"
+                aria-label="Close photo lightbox"
+                class="absolute -top-12 right-0 text-white/70 hover:text-white
+                       transition-colors p-2 rounded-full focus:outline-none
+                       focus-visible:ring-2 focus-visible:ring-white">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+
+        <!-- Image area -->
+        <div class="relative w-full flex items-center justify-center">
+          <!-- Prev -->
+          <button id="lb-prev"
+                  type="button"
+                  aria-label="Previous photo"
+                  class="absolute left-0 sm:-left-14 z-10 text-white/70 hover:text-white
+                         transition-colors p-3 rounded-full bg-white/10 hover:bg-white/20
+                         focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5"
+                 viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+            </svg>
+          </button>
+
+          <!-- Main image -->
+          <img id="lb-img"
+               src=""
+               alt=""
+               class="rounded-xl shadow-soft-xl w-full">
+
+          <!-- Next -->
+          <button id="lb-next"
+                  type="button"
+                  aria-label="Next photo"
+                  class="absolute right-0 sm:-right-14 z-10 text-white/70 hover:text-white
+                         transition-colors p-3 rounded-full bg-white/10 hover:bg-white/20
+                         focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5"
+                 viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Caption + counter -->
+        <div class="mt-4 text-center">
+          <p id="lb-caption"
+             aria-live="polite"
+             class="text-white/90 text-sm max-w-lg mx-auto leading-relaxed"></p>
+          <p id="lb-counter"
+             class="text-white/50 text-xs mt-1"></p>
+        </div>
+
+        <!-- Keyboard hint -->
+        <p class="text-white/30 text-xs mt-3 hidden sm:block">
+          ← → arrow keys to navigate &nbsp;·&nbsp; Esc to close
+        </p>
+      </div>
+    </div><!-- /#lightbox -->

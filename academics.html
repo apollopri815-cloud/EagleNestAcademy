@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <!-- ═══════════════════════════════════════════════════════
+       EagleNest Academy – Academics
+       ═══════════════════════════════════════════════════════ -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Academics | EagleNest Academy – CBC Curriculum, Nairobi Kenya</title>
+  <meta name="description"
+        content="Explore EagleNest Academy's CBC-aligned academic programmes for Pre-Primary, Primary, and Junior Secondary learners. View subjects, timetables, academic support, and download resources.">
+  <meta name="keywords"
+        content="CBC curriculum Kenya, EagleNest academics, primary school subjects Nairobi, Junior Secondary CBC, pre-primary CBC Kenya">
+  <meta name="author" content="EagleNest Academy">
+  <link rel="canonical" href="https://www.eaglenest.ac.ke/academics.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="EagleNest Academy">
+  <meta property="og:title"       content="Academics | EagleNest Academy – CBC Curriculum">
+  <meta property="og:description" content="CBC-aligned learning from Pre-Primary through Junior Secondary. Discover our subjects, timetables, academic support, and co-curricular programmes.">
+  <meta property="og:image"       content="assets/images/academics/og-academics.jpg">
+  <meta property="og:url"         content="https://www.eaglenest.ac.ke/academics.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Academics – EagleNest Academy, Nairobi">
+  <meta name="twitter:description" content="CBC-aligned programmes from Pre-Primary to Junior Secondary. Subjects, timetables and academic downloads.">
+  <meta name="twitter:image"       content="assets/images/academics/og-academics.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon"             href="assets/images/icons/favicon.ico"          type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png" sizes="180x180">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+  <!-- Tailwind config BEFORE CDN -->
+  <script src="assets/js/tailwind-config.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <style>
+    /* ── Banner overlay ── */
+    .banner-overlay {
+      background: linear-gradient(
+        110deg,
+        rgba(15,42,67,0.88) 0%,
+        rgba(15,42,67,0.55) 55%,
+        rgba(34,197,94,0.15) 100%
+      );
+    }
+
+    /* ── Tab active indicator ── */
+    [role="tab"][aria-selected="true"] {
+      color: #0F2A43;
+      border-bottom-color: #22C55E;
+      font-weight: 700;
+    }
+    [role="tab"][aria-selected="false"] {
+      color: #0F2A4399;
+      border-bottom-color: transparent;
+    }
+    [role="tab"]:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 3px #F0F9FF, 0 0 0 5px #0EA5E9;
+      border-radius: 0.375rem;
+    }
+
+    /* ── Timeline track ── */
+    .timeline-track {
+      position: relative;
+    }
+    .timeline-track::before {
+      content: '';
+      position: absolute;
+      left: 1.5rem;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, #0EA5E9 0%, #22C55E 100%);
+    }
+    @media (min-width: 768px) {
+      .timeline-track::before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    /* ── PDF card hover ── */
+    .pdf-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .pdf-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(15,42,67,0.12);
+    }
+
+    /* ── Subject icon container colours (cycling) ── */
+    .subj-sky  { background-color: #E0F2FE; color: #0284C7; }
+    .subj-leaf { background-color: #DCFCE7; color: #16A34A; }
+    .subj-ink  { background-color: #E8EFF6; color: #0F2A43; }
+  </style>
+</head>
+
+<body class="font-body text-ink bg-white antialiased">
+
+  <!-- ═══ Header (injected by components.js) ═══ -->
+  <div id="site-header"></div>
+
+  <main id="main-content" tabindex="-1">
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  1. PAGE HEADER BANNER + BREADCRUMB              ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section aria-label="Page header"
+             class="relative h-72 md:h-80 flex items-end overflow-hidden">
+
+      <div class="absolute inset-0">
+        <img src="assets/images/academics/banner.jpg"
+             alt="EagleNest Academy students working on a CBC science project"
+             class="w-full h-full object-cover object-center"
+             loading="eager">
+        <div class="absolute inset-0 banner-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="mb-3">
+          <ol class="flex items-center gap-2 text-xs text-sky-200" role="list">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li aria-hidden="true">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2"
+                   viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+                   d="M9 5l7 7-7 7"/></svg>
+            </li>
+            <li><span class="text-white font-medium" aria-current="page">Academics</span></li>
+          </ol>
+        </nav>
+
+        <h1 class="font-heading text-white text-4xl sm:text-5xl">Academics</h1>
+        <p class="text-sky-100 mt-2 text-base max-w-xl">
+          CBC-aligned programmes from Pre-Primary through Junior Secondary —
+          built to challenge, inspire, and celebrate every learner.
+        </p>
+      </div>
+
+      <!-- Wave -->
+      <div class="absolute bottom-0 inset-x-0" aria-hidden="true">
+        <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+             class="w-full" preserveAspectRatio="none">
+          <path d="M0 48L480 16L960 40L1440 8V48H0Z" fill="white"/>
+        </svg>
+      </div>
+    </section>
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  2. CBC CURRICULUM OVERVIEW                      ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="cbc-overview"
+             aria-labelledby="cbc-heading"
+             class="py-20 px-4 bg-white">
+
+      <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+
+        <!-- Text -->
+        <div class="reveal">
+          <span class="inline-block text-leaf-600 text-xs font-semibold
+                       uppercase tracking-widest mb-3">Curriculum Framework</span>
+          <h2 id="cbc-heading" class="font-heading text-ink mb-5">
+            What Is the Competency Based Curriculum?
+          </h2>
+          <p class="text-ink/80 leading-relaxed mb-4">
+            Kenya's CBC, developed by the Kenya Institute of Curriculum Development
+            (KICD), shifts the focus from rote memorisation to the development of
+            practical, transferable competencies. Learners are assessed on what they
+            can <em>do</em>, not just what they can recall.
+          </p>
+          <p class="text-ink/80 leading-relaxed mb-6">
+            At EagleNest, our teachers are fully trained and certified in CBC
+            pedagogy. We implement the curriculum through project-based learning,
+            collaborative activities, formative assessment, and rich creative
+            experiences — both inside and outside the classroom.
+          </p>
+
+          <!-- Seven core competencies chips -->
+          <h3 class="font-heading text-ink text-sm font-bold uppercase tracking-wider mb-3">
+            The 7 Core Competencies
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-sky-50 border border-sky-100 text-sky-700
+                         text-xs font-semibold px-3 py-1.5 rounded-full">
+              Communication &amp; Collaboration
+            </span>
+            <span class="bg-leaf-50 border border-leaf-100 text-leaf-700
+                         text-xs font-semibold px-3 py-1.5 rounded-full">
+              Critical Thinking &amp; Problem Solving
+            </span>
+            <span class="bg-sky-50 border border-sky-100 text-sky-700
+                         text-xs font-semibold px-3 py-1.5 rounded-full">
+              Imagination &amp; Creativity
+            </span>
+            <span class="bg-leaf-50 border border-leaf-100 text-leaf-700
+                         text-xs font-semibold px-3 py-1.5 rounded-full">
+              Citizenship
+            </span>
+            <span class="bg-sky-50 border border-sky-100 text-sky-700
+                         text-xs font-semibold px-3 py-1.5 rounded-full">
+              Digital Literacy
+            </span>
+            <span class="bg-leaf-50 border border-leaf-100 text-leaf-700
+                         text-xs font-semibold px-3 py-1.5 rounded-full">
+              Learning to Learn
+            </span>
+            <span class="bg-sky-50 border border-sky-100 text-sky-700
+                         text-xs font-semibold px-3 py-1.5 rounded-full">
+              Self-Efficacy
+            </span>
+          </div>
+        </div>
+
+        <!-- Illustrative stat / feature cards -->
+        <div class="grid grid-cols-2 gap-5 reveal reveal-right">
+
+          <div class="rounded-2xl bg-sky-50 border border-sky-100 p-6 shadow-soft-sm">
+            <div class="w-11 h-11 rounded-xl bg-sky-500 flex items-center justify-center
+                        mb-4" aria-hidden="true">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+              </svg>
+            </div>
+            <p class="font-heading text-ink font-bold text-sm leading-snug">
+              Formative Assessment
+            </p>
+            <p class="text-ink/60 text-xs mt-1 leading-relaxed">
+              Continuous, low-stakes assessment throughout the term — no single
+              high-stakes exam defines a learner.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-leaf-50 border border-leaf-100 p-6 shadow-soft-sm">
+            <div class="w-11 h-11 rounded-xl bg-leaf-500 flex items-center justify-center
+                        mb-4" aria-hidden="true">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <p class="font-heading text-ink font-bold text-sm leading-snug">
+              Learner-Centred Pedagogy
+            </p>
+            <p class="text-ink/60 text-xs mt-1 leading-relaxed">
+              Teachers facilitate discovery; learners are active participants,
+              not passive recipients.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-leaf-50 border border-leaf-100 p-6 shadow-soft-sm">
+            <div class="w-11 h-11 rounded-xl bg-leaf-500 flex items-center justify-center
+                        mb-4" aria-hidden="true">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <p class="font-heading text-ink font-bold text-sm leading-snug">
+              Values &amp; Life Skills
+            </p>
+            <p class="text-ink/60 text-xs mt-1 leading-relaxed">
+              Patriotism, social cohesion, integrity, and Ubuntu are woven
+              throughout every learning area.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-sky-50 border border-sky-100 p-6 shadow-soft-sm">
+            <div class="w-11 h-11 rounded-xl bg-sky-500 flex items-center justify-center
+                        mb-4" aria-hidden="true">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <p class="font-heading text-ink font-bold text-sm leading-snug">
+              Technology Integration
+            </p>
+            <p class="text-ink/60 text-xs mt-1 leading-relaxed">
+              Digital tools and coding are embedded across subjects, not
+              taught as a stand-alone subject.
+            </p>
+          </div>
+
+        </div><!-- /feature cards -->
+      </div>
+    </section><!-- /cbc-overview -->
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  3. LEVEL TABS – Pre-Primary / Primary / JSS     ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="programmes"
+             aria-labelledby="programmes-heading"
+             class="py-20 px-4 bg-brand-gradient-soft">
+
+      <div class="max-w-6xl mx-auto">
+
+        <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+          <span class="inline-block text-sky-600 text-xs font-semibold
+                       uppercase tracking-widest mb-3">Our Three Levels</span>
+          <h2 id="programmes-heading" class="font-heading text-ink">
+            Explore Each Programme
+          </h2>
+        </div>
+
+        <!-- ── Tab bar ── -->
+        <div class="reveal">
+          <div role="tablist"
+               aria-label="Academic levels"
+               class="flex border-b-2 border-sky-100 mb-8 overflow-x-auto
+                      scrollbar-hide gap-0">
+
+            <button role="tab"
+                    id="tab-preprimary"
+                    aria-selected="true"
+                    aria-controls="panel-preprimary"
+                    class="flex-shrink-0 flex items-center gap-2 px-6 py-3.5
+                           border-b-[3px] text-sm font-semibold transition-colors
+                           duration-200 whitespace-nowrap focus:relative"
+                    data-tab="preprimary">
+              <!-- Seedling icon -->
+              <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+              </svg>
+              Pre-Primary
+              <span class="ml-1 text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded-full
+                           font-normal">Ages 3–5</span>
+            </button>
+
+            <button role="tab"
+                    id="tab-primary"
+                    aria-selected="false"
+                    aria-controls="panel-primary"
+                    class="flex-shrink-0 flex items-center gap-2 px-6 py-3.5
+                           border-b-[3px] text-sm font-semibold transition-colors
+                           duration-200 whitespace-nowrap focus:relative"
+                    data-tab="primary">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
+              </svg>
+              Primary School
+              <span class="ml-1 text-xs bg-leaf-100 text-leaf-700 px-2 py-0.5 rounded-full
+                           font-normal">Grade 1–6</span>
+            </button>
+
+            <button role="tab"
+                    id="tab-jss"
+                    aria-selected="false"
+                    aria-controls="panel-jss"
+                    class="flex-shrink-0 flex items-center gap-2 px-6 py-3.5
+                           border-b-[3px] text-sm font-semibold transition-colors
+                           duration-200 whitespace-nowrap focus:relative"
+                    data-tab="jss">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.381z"/>
+              </svg>
+              Junior Secondary
+              <span class="ml-1 text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded-full
+                           font-normal">Grade 7–9</span>
+            </button>
+
+          </div><!-- /tablist -->
+
+          <!-- ────────────────────────────────────────────── -->
+          <!-- PANEL: Pre-Primary                             -->
+          <!-- ────────────────────────────────────────────── -->
+          <div id="panel-preprimary"
+               role="tabpanel"
+               aria-labelledby="tab-preprimary"
+               tabindex="0"
+               class="tab-panel">
+
+            <div class="grid lg:grid-cols-2 gap-10 items-start">
+
+              <!-- Left: overview -->
+              <div>
+                <div class="rounded-2xl overflow-hidden shadow-soft-sm aspect-[16/9] mb-6">
+                  <img src="assets/images/academics/pre-primary.jpg"
+                       alt="Pre-Primary pupils engaged in play-based CBC learning at EagleNest"
+                       class="w-full h-full object-cover"
+                       loading="lazy">
+                </div>
+                <h3 class="font-heading text-ink text-2xl mb-3" id="pre-primary">
+                  Pre-Primary School
+                </h3>
+                <p class="text-ink/80 leading-relaxed mb-3">
+                  Our Pre-Primary programme (PP1 &amp; PP2) is built entirely on
+                  play-based learning, as required by the KICD Pre-Primary
+                  curriculum. We believe young children learn best through
+                  exploration, movement, and imagination.
+                </p>
+                <p class="text-ink/80 leading-relaxed mb-5">
+                  Each day is structured to develop five core developmental
+                  domains: language &amp; literacy, numeracy, psychomotor,
+                  creative arts, and social-emotional wellbeing — delivered
+                  by qualified, caring educators in a warm, stimulating
+                  classroom environment.
+                </p>
+                <!-- Key facts -->
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-sky-50">
+                    <p class="text-xl font-heading text-sky-600 font-bold">25</p>
+                    <p class="text-xs text-ink/60 mt-0.5">Max learners per class</p>
+                  </div>
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-sky-50">
+                    <p class="text-xl font-heading text-sky-600 font-bold">7 am</p>
+                    <p class="text-xs text-ink/60 mt-0.5">School opens</p>
+                  </div>
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-sky-50">
+                    <p class="text-xl font-heading text-sky-600 font-bold">2 yrs</p>
+                    <p class="text-xs text-ink/60 mt-0.5">Duration (PP1–PP2)</p>
+                  </div>
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-sky-50">
+                    <p class="text-xl font-heading text-sky-600 font-bold">Age 3</p>
+                    <p class="text-xs text-ink/60 mt-0.5">Entry age (PP1)</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: learning areas -->
+              <div>
+                <h4 class="font-heading text-ink text-lg mb-4">
+                  Pre-Primary Learning Areas
+                </h4>
+                <ul class="space-y-3" role="list">
+
+                  <!-- Learning area row helper -->
+                  <li class="flex items-start gap-3 bg-white rounded-xl p-4
+                             shadow-soft-sm border border-sky-50">
+                    <span class="w-8 h-8 rounded-lg subj-sky flex items-center
+                                 justify-center shrink-0 mt-0.5 text-sm font-bold"
+                          aria-hidden="true">🔤</span>
+                    <div>
+                      <p class="font-semibold text-ink text-sm">Language Activities</p>
+                      <p class="text-ink/60 text-xs leading-relaxed mt-0.5">
+                        Listening, speaking, early reading, and writing in
+                        mother tongue and English.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3 bg-white rounded-xl p-4
+                             shadow-soft-sm border border-sky-50">
+                    <span class="w-8 h-8 rounded-lg subj-leaf flex items-center
+                                 justify-center shrink-0 mt-0.5 text-sm font-bold"
+                          aria-hidden="true">🔢</span>
+                    <div>
+                      <p class="font-semibold text-ink text-sm">Mathematical Activities</p>
+                      <p class="text-ink/60 text-xs leading-relaxed mt-0.5">
+                        Number concepts, sorting, pattern recognition, and
+                        early problem-solving through play.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3 bg-white rounded-xl p-4
+                             shadow-soft-sm border border-sky-50">
+                    <span class="w-8 h-8 rounded-lg subj-sky flex items-center
+                                 justify-center shrink-0 mt-0.5 text-sm font-bold"
+                          aria-hidden="true">🌍</span>
+                    <div>
+                      <p class="font-semibold text-ink text-sm">Environmental Activities</p>
+                      <p class="text-ink/60 text-xs leading-relaxed mt-0.5">
+                        Exploring living things, weather, water, and the
+                        natural world around them.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3 bg-white rounded-xl p-4
+                             shadow-soft-sm border border-sky-50">
+                    <span class="w-8 h-8 rounded-lg subj-leaf flex items-center
+                                 justify-center shrink-0 mt-0.5 text-sm font-bold"
+                          aria-hidden="true">🎨</span>
+                    <div>
+                      <p class="font-semibold text-ink text-sm">Creative Arts Activities</p>
+                      <p class="text-ink/60 text-xs leading-relaxed mt-0.5">
+                        Drawing, painting, music, movement, and dramatic play.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3 bg-white rounded-xl p-4
+                             shadow-soft-sm border border-sky-50">
+                    <span class="w-8 h-8 rounded-lg subj-sky flex items-center
+                                 justify-center shrink-0 mt-0.5 text-sm font-bold"
+                          aria-hidden="true">🏃</span>
+                    <div>
+                      <p class="font-semibold text-ink text-sm">Psychomotor &amp; Creative Arts</p>
+                      <p class="text-ink/60 text-xs leading-relaxed mt-0.5">
+                        Gross and fine motor skills, outdoor play, and PE
+                        activities that build physical confidence.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start gap-3 bg-white rounded-xl p-4
+                             shadow-soft-sm border border-sky-50">
+                    <span class="w-8 h-8 rounded-lg subj-leaf flex items-center
+                                 justify-center shrink-0 mt-0.5 text-sm font-bold"
+                          aria-hidden="true">🤝</span>
+                    <div>
+                      <p class="font-semibold text-ink text-sm">
+                        Religious Education &amp; Social Skills
+                      </p>
+                      <p class="text-ink/60 text-xs leading-relaxed mt-0.5">
+                        Values, sharing, respect, and emotional intelligence
+                        grounded in Kenyan community life.
+                      </p>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+          </div><!-- /panel-preprimary -->
+
+
+          <!-- ────────────────────────────────────────────── -->
+          <!-- PANEL: Primary (hidden by default)             -->
+          <!-- ────────────────────────────────────────────── -->
+          <div id="panel-primary"
+               role="tabpanel"
+               aria-labelledby="tab-primary"
+               tabindex="0"
+               class="tab-panel hidden">
+
+            <div class="grid lg:grid-cols-2 gap-10 items-start">
+
+              <div>
+                <div class="rounded-2xl overflow-hidden shadow-soft-sm aspect-[16/9] mb-6">
+                  <img src="assets/images/academics/primary.jpg"
+                       alt="Primary school students working on a CBC group project at EagleNest"
+                       class="w-full h-full object-cover"
+                       loading="lazy">
+                </div>
+                <h3 class="font-heading text-ink text-2xl mb-3" id="primary">
+                  Primary School (Grade 1–6)
+                </h3>
+                <p class="text-ink/80 leading-relaxed mb-3">
+                  The CBC Primary pathway spans Lower Primary (Grades 1–3)
+                  and Upper Primary (Grades 4–6). Each stage builds on the
+                  last, deepening competencies and introducing learners to
+                  more complex concepts across all learning areas.
+                </p>
+                <p class="text-ink/80 leading-relaxed mb-5">
+                  Learners are assessed termly through Learner Portfolio
+                  Assessment (LPA) and Summative Assessment (SA), giving
+                  a holistic picture of each child's progress. Our termly
+                  reports are shared with parents alongside a structured
+                  parent-teacher conversation.
+                </p>
+                <!-- Key facts -->
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-leaf-50">
+                    <p class="text-xl font-heading text-leaf-600 font-bold">30</p>
+                    <p class="text-xs text-ink/60 mt-0.5">Max learners per class</p>
+                  </div>
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-leaf-50">
+                    <p class="text-xl font-heading text-leaf-600 font-bold">6 yrs</p>
+                    <p class="text-xs text-ink/60 mt-0.5">Duration (Grade 1–6)</p>
+                  </div>
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-leaf-50">
+                    <p class="text-xl font-heading text-leaf-600 font-bold">3</p>
+                    <p class="text-xs text-ink/60 mt-0.5">Terms per year</p>
+                  </div>
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-leaf-50">
+                    <p class="text-xl font-heading text-leaf-600 font-bold">Age 6</p>
+                    <p class="text-xs text-ink/60 mt-0.5">Entry age (Grade 1)</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Learning areas -->
+              <div>
+                <h4 class="font-heading text-ink text-lg mb-4">
+                  Primary Learning Areas
+                </h4>
+                <div class="grid grid-cols-1 gap-3">
+                  <!-- Lower Primary (Grades 1–3) -->
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-leaf-50">
+                    <p class="font-heading text-leaf-700 text-xs uppercase tracking-wider
+                               font-bold mb-2">Lower Primary — Grades 1–3</p>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full">Literacy Activities</span>
+                      <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full">Kiswahili</span>
+                      <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full">Mathematical Activities</span>
+                      <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full">Environmental Activities</span>
+                      <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full">Creative Arts</span>
+                      <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full">Religious Education</span>
+                      <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full">Mother Tongue</span>
+                    </div>
+                  </div>
+                  <!-- Upper Primary (Grades 4–6) -->
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-sky-50">
+                    <p class="font-heading text-sky-700 text-xs uppercase tracking-wider
+                               font-bold mb-2">Upper Primary — Grades 4–6</p>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">English</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Kiswahili</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Mathematics</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Integrated Science</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Social Studies</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Religious Education</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Creative Arts &amp; Sports</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Agriculture &amp; Nutrition</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Life Skills</span>
+                    </div>
+                  </div>
+                  <!-- Assessment note -->
+                  <div class="flex items-start gap-3 bg-ink/5 rounded-xl p-4 border border-ink/10">
+                    <svg class="w-5 h-5 text-ink/50 shrink-0 mt-0.5" fill="none"
+                         stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                         aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <p class="text-xs text-ink/70 leading-relaxed">
+                      <strong class="text-ink">Assessment:</strong> Learner
+                      Portfolio Assessment (LPA) throughout the term, plus
+                      Summative Assessment (SA) at the end of each term.
+                      No single examination replaces holistic evaluation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- /panel-primary -->
+
+
+          <!-- ────────────────────────────────────────────── -->
+          <!-- PANEL: Junior Secondary (hidden by default)    -->
+          <!-- ────────────────────────────────────────────── -->
+          <div id="panel-jss"
+               role="tabpanel"
+               aria-labelledby="tab-jss"
+               tabindex="0"
+               class="tab-panel hidden">
+
+            <div class="grid lg:grid-cols-2 gap-10 items-start">
+
+              <div>
+                <div class="rounded-2xl overflow-hidden shadow-soft-sm aspect-[16/9] mb-6">
+                  <img src="assets/images/academics/junior-secondary.jpg"
+                       alt="Junior Secondary students in a science laboratory at EagleNest Academy"
+                       class="w-full h-full object-cover"
+                       loading="lazy">
+                </div>
+                <h3 class="font-heading text-ink text-2xl mb-3" id="junior-secondary">
+                  Junior Secondary School (Grade 7–9)
+                </h3>
+                <p class="text-ink/80 leading-relaxed mb-3">
+                  Kenya's new Junior Secondary (JSS) replaced the traditional
+                  Standard 7–8 and Form 1 structure. At EagleNest, Grade 7–9
+                  learners are taught by specialist subject teachers, giving
+                  them deep subject engagement alongside the breadth of CBC.
+                </p>
+                <p class="text-ink/80 leading-relaxed mb-5">
+                  JSS culminates in the Kenya Junior Secondary Education
+                  Assessment (KJSEA) at the end of Grade 9, after which
+                  learners transition to Senior Secondary School. EagleNest
+                  actively prepares learners for Senior Secondary pathways
+                  through strong academic guidance and career exploration.
+                </p>
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-sky-50">
+                    <p class="text-xl font-heading text-sky-600 font-bold">30</p>
+                    <p class="text-xs text-ink/60 mt-0.5">Max learners per class</p>
+                  </div>
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-sky-50">
+                    <p class="text-xl font-heading text-sky-600 font-bold">3 yrs</p>
+                    <p class="text-xs text-ink/60 mt-0.5">Duration (Grade 7–9)</p>
+                  </div>
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-sky-50">
+                    <p class="text-xl font-heading text-sky-600 font-bold">KJSEA</p>
+                    <p class="text-xs text-ink/60 mt-0.5">End of Grade 9 exam</p>
+                  </div>
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-sky-50">
+                    <p class="text-xl font-heading text-sky-600 font-bold">Age 13</p>
+                    <p class="text-xs text-ink/60 mt-0.5">Entry age (Grade 7)</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- JSS Subjects -->
+              <div>
+                <h4 class="font-heading text-ink text-lg mb-4">
+                  Junior Secondary Subjects
+                </h4>
+                <div class="space-y-3">
+
+                  <!-- Core subjects -->
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-sky-50">
+                    <p class="font-heading text-sky-700 text-xs uppercase tracking-wider
+                               font-bold mb-2">Core Subjects</p>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">English</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Kiswahili</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Mathematics</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Integrated Science</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Social Studies</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Religious Education</span>
+                    </div>
+                  </div>
+
+                  <!-- Optional subjects -->
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-leaf-50">
+                    <p class="font-heading text-leaf-700 text-xs uppercase tracking-wider
+                               font-bold mb-2">Optional / Elective Subjects</p>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full">Agriculture</span>
+                      <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full">Business Studies</span>
+                      <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full">Computer Science</span>
+                      <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full">Home Science</span>
+                      <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full">Visual Arts</span>
+                      <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full">Music</span>
+                      <span class="bg-leaf-50 text-leaf-700 text-xs px-2.5 py-1 rounded-full">German / French</span>
+                    </div>
+                  </div>
+
+                  <!-- Physical education -->
+                  <div class="bg-white rounded-xl p-4 shadow-soft-sm border border-sky-50">
+                    <p class="font-heading text-sky-700 text-xs uppercase tracking-wider
+                               font-bold mb-2">Mandatory Cross-Cutting</p>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Physical Education</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Life Skills Education</span>
+                      <span class="bg-sky-50 text-sky-700 text-xs px-2.5 py-1 rounded-full">Community Service Learning</span>
+                    </div>
+                  </div>
+
+                  <!-- Assessment note -->
+                  <div class="flex items-start gap-3 bg-ink/5 rounded-xl p-4 border border-ink/10">
+                    <svg class="w-5 h-5 text-ink/50 shrink-0 mt-0.5" fill="none"
+                         stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                         aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <p class="text-xs text-ink/70 leading-relaxed">
+                      <strong class="text-ink">Assessment:</strong> Continuous
+                      school-based assessment plus the national Kenya Junior
+                      Secondary Education Assessment (KJSEA) at the end of
+                      Grade 9 determines Senior Secondary school placement.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div><!-- /panel-jss -->
+
+        </div><!-- /reveal tab container -->
+      </div>
+    </section><!-- /programmes tabs -->
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  4. SUBJECTS GRID WITH ICONS                     ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="subjects"
+             aria-labelledby="subjects-heading"
+             class="py-20 px-4 bg-white">
+
+      <div class="max-w-6xl mx-auto">
+
+        <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+          <span class="inline-block text-leaf-600 text-xs font-semibold
+                       uppercase tracking-widest mb-3">What We Teach</span>
+          <h2 id="subjects-heading" class="font-heading text-ink mb-4">
+            Subjects Across All Levels
+          </h2>
+          <p class="text-ink/70 leading-relaxed">
+            From foundational literacy to specialist STEM, every subject is
+            taught by a qualified, TSC-registered teacher who is passionate
+            about their learning area.
+          </p>
+        </div>
+
+        <!-- Subject cards grid — 3 cols md, 2 cols sm, 1 mobile -->
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 reveal-stagger">
+
+          <!-- English Language -->
+          <div class="flex items-start gap-4 bg-sky-50 rounded-xl p-5
+                      border border-sky-100 hover:shadow-soft transition-shadow">
+            <div class="w-10 h-10 rounded-lg subj-sky flex items-center
+                        justify-center shrink-0 text-lg" aria-hidden="true">📖</div>
+            <div>
+              <p class="font-heading text-ink font-bold text-sm">English Language</p>
+              <p class="text-ink/55 text-xs mt-0.5">All levels</p>
+            </div>
+          </div>
+
+          <!-- Kiswahili -->
+          <div class="flex items-start gap-4 bg-leaf-50 rounded-xl p-5
+                      border border-leaf-100 hover:shadow-soft transition-shadow">
+            <div class="w-10 h-10 rounded-lg subj-leaf flex items-center
+                        justify-center shrink-0 text-lg" aria-hidden="true">🗣️</div>
+            <div>
+              <p class="font-heading text-ink font-bold text-sm">Kiswahili</p>
+              <p class="text-ink/55 text-xs mt-0.5">All levels</p>
+            </div>
+          </div>
+
+          <!-- Mathematics -->
+          <div class="flex items-start gap-4 bg-sky-50 rounded-xl p-5
+                      border border-sky-100 hover:shadow-soft transition-shadow">
+            <div class="w-10 h-10 rounded-lg subj-sky flex items-center
+                        justify-center shrink-0 text-lg" aria-hidden="true">📐</div>
+            <div>
+              <p class="font-heading text-ink font-bold text-sm">Mathematics</p>
+              <p class="text-ink/55 text-xs mt-0.5">All levels</p>
+            </div>
+          </div>
+
+          <!-- Integrated Science -->
+          <div class="flex items-start gap-4 bg-leaf-50 rounded-xl p-5
+                      border border-leaf-100 hover:shadow-soft transition-shadow">
+            <div class="w-10 h-10 rounded-lg subj-leaf flex items-center
+                        justify-center shrink-0 text-lg" aria-hidden="true">🔬</div>
+            <div>
+              <p class="font-heading text-ink font-bold text-sm">Integrated Science</p>
+              <p class="text-ink/55 text-xs mt-0.5">Grade 4–9</p>
+            </div>
+          </div>
+
+          <!-- Social Studies -->
+          <div class="flex items-start gap-4 bg-sky-50 rounded-xl p-5
+                      border border-sky-100 hover:shadow-soft transition-shadow">
+            <div class="w-10 h-10 rounded-lg subj-sky flex items-center
+                        justify-center shrink-0 text-lg" aria-hidden="true">🌍</div>
+            <div>
+              <p class="font-heading text-ink font-bold text-sm">Social Studies</p>
+              <p class="text-ink/55 text-xs mt-0.5">Grade 4–9</p>
+            </div>
+          </div>
+
+          <!-- Religious Education -->
+          <div class="flex items-start gap-4 bg-leaf-50 rounded-xl p-5
+                      border border-leaf-100 hover:shadow-soft transition-shadow">
+            <div class="w-10 h-10 rounded-lg subj-leaf flex items-center
+                        justify-center shrink-0 text-lg" aria-hidden="true">✝️</div>
+            <div>
+              <p class="font-heading text-ink font-bold text-sm">Religious Education</p>
+              <p class="text-ink/55 text-xs mt-0.5">CRE / IRE / HRE</p>
+            </div>
+          </div>
+
+          <!-- Creative Arts -->
+          <div class="flex items-start gap-4 bg-sky-50 rounded-xl p-5
+                      border border-sky-100 hover:shadow-soft transition-shadow">
+            <div class="w-10 h-10 rounded-lg subj-sky flex items-center
+                        justify-center shrink-0 text-lg" aria-hidden="true">🎨</div>
+            <div>
+              <p class="font-heading text-ink font-bold text-sm">Creative Arts</p>
+              <p class="text-ink/55 text-xs mt-0.5">All levels</p>
+            </div>
+          </div>
+
+          <!-- Physical Education -->
+          <div class="flex items-start gap-4 bg-leaf-50 rounded-xl p-5
+                      border border-leaf-100 hover:shadow-soft transition-shadow">
+            <div class="w-10 h-10 rounded-lg subj-leaf flex items-center
+                        justify-center shrink-0 text-lg" aria-hidden="true">⚽</div>
+            <div>
+              <p class="font-heading text-ink font-bold text-sm">Physical Education</p>
+              <p class="text-ink/55 text-xs mt-0.5">All levels</p>
+            </div>
+          </div>
+
+          <!-- Computer Science -->
+          <div class="flex items-start gap-4 bg-sky-50 rounded-xl p-5
+                      border border-sky-100 hover:shadow-soft transition-shadow">
+            <div class="w-10 h-10 rounded-lg subj-sky flex items-center
+                        justify-center shrink-0 text-lg" aria-hidden="true">💻</div>
+            <div>
+              <p class="font-heading text-ink font-bold text-sm">Computer Science</p>
+              <p class="text-ink/55 text-xs mt-0.5">Grade 7–9</p>
+            </div>
+          </div>
+
+          <!-- Business Studies -->
+          <div class="flex items-start gap-4 bg-leaf-50 rounded-xl p-5
+                      border border-leaf-100 hover:shadow-soft transition-shadow">
+            <div class="w-10 h-10 rounded-lg subj-leaf flex items-center
+                        justify-center shrink-0 text-lg" aria-hidden="true">📊</div>
+            <div>
+              <p class="font-heading text-ink font-bold text-sm">Business Studies</p>
+              <p class="text-ink/55 text-xs mt-0.5">Grade 7–9 (elective)</p>
+            </div>
+          </div>
+
+          <!-- Agriculture & Nutrition -->
+          <div class="flex items-start gap-4 bg-sky-50 rounded-xl p-5
+                      border border-sky-100 hover:shadow-soft transition-shadow">
+            <div class="w-10 h-10 rounded-lg subj-sky flex items-center
+                        justify-center shrink-0 text-lg" aria-hidden="true">🌱</div>
+            <div>
+              <p class="font-heading text-ink font-bold text-sm">Agriculture &amp; Nutrition</p>
+              <p class="text-ink/55 text-xs mt-0.5">Grade 4–9</p>
+            </div>
+          </div>
+
+          <!-- Music -->
+          <div class="flex items-start gap-4 bg-leaf-50 rounded-xl p-5
+                      border border-leaf-100 hover:shadow-soft transition-shadow">
+            <div class="w-10 h-10 rounded-lg subj-leaf flex items-center
+                        justify-center shrink-0 text-lg" aria-hidden="true">🎵</div>
+            <div>
+              <p class="font-heading text-ink font-bold text-sm">Music</p>
+              <p class="text-ink/55 text-xs mt-0.5">Grade 7–9 (elective)</p>
+            </div>
+          </div>
+
+        </div><!-- /subjects grid -->
+      </div>
+    </section><!-- /subjects -->
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  5. CO-CURRICULAR ACADEMIC SUPPORT               ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="academic-support"
+             aria-labelledby="support-heading"
+             class="py-20 px-4 bg-ink relative overflow-hidden">
+
+      <!-- Decorative blobs -->
+      <div class="absolute -top-32 -right-32 w-80 h-80 rounded-full
+                  bg-sky-500/10 pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute -bottom-32 -left-32 w-80 h-80 rounded-full
+                  bg-leaf-500/10 pointer-events-none" aria-hidden="true"></div>
+
+      <div class="relative z-10 max-w-6xl mx-auto">
+
+        <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+          <span class="inline-block text-leaf-400 text-xs font-semibold
+                       uppercase tracking-widest mb-3">Beyond the Classroom</span>
+          <h2 id="support-heading" class="font-heading text-white mb-3">
+            Co-Curricular &amp; Academic Support
+          </h2>
+          <p class="text-sky-100/80 leading-relaxed">
+            Strong co-curricular programmes and targeted academic support are
+            not extras at EagleNest — they are central to our CBC delivery.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 reveal-stagger">
+
+          <!-- Remedial & Catch-up -->
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-7
+                      hover:bg-white/10 transition-colors duration-200">
+            <div class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center
+                        justify-center mb-5" aria-hidden="true">
+              <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+              </svg>
+            </div>
+            <h3 class="font-heading text-white text-lg mb-2">
+              Remedial &amp; Catch-Up Classes
+            </h3>
+            <p class="text-sky-100/75 text-sm leading-relaxed">
+              Learners who need extra support attend structured remedial
+              sessions with a subject specialist. Intervention is
+              identified early through continuous formative assessment,
+              not left until exam time.
+            </p>
+          </div>
+
+          <!-- Gifted Enrichment -->
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-7
+                      hover:bg-white/10 transition-colors duration-200">
+            <div class="w-12 h-12 rounded-xl bg-leaf-500/20 flex items-center
+                        justify-center mb-5" aria-hidden="true">
+              <svg class="w-6 h-6 text-leaf-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="font-heading text-white text-lg mb-2">
+              Gifted &amp; Talented Enrichment
+            </h3>
+            <p class="text-sky-100/75 text-sm leading-relaxed">
+              High-achieving learners are stretched through extension tasks,
+              subject olympiads, national competition preparation, and
+              mentorship with University of Nairobi student volunteers.
+            </p>
+          </div>
+
+          <!-- Study Clubs -->
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-7
+                      hover:bg-white/10 transition-colors duration-200">
+            <div class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center
+                        justify-center mb-5" aria-hidden="true">
+              <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <h3 class="font-heading text-white text-lg mb-2">
+              Peer Study Clubs
+            </h3>
+            <p class="text-sky-100/75 text-sm leading-relaxed">
+              Teacher-supervised study clubs meet three times a week.
+              Collaborative peer learning reinforces CBC competencies and
+              builds the communication and teamwork skills the curriculum
+              demands.
+            </p>
+          </div>
+
+          <!-- Science Club -->
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-7
+                      hover:bg-white/10 transition-colors duration-200">
+            <div class="w-12 h-12 rounded-xl bg-leaf-500/20 flex items-center
+                        justify-center mb-5" aria-hidden="true">
+              <svg class="w-6 h-6 text-leaf-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15"/>
+              </svg>
+            </div>
+            <h3 class="font-heading text-white text-lg mb-2">
+              Science &amp; STEM Club
+            </h3>
+            <p class="text-sky-100/75 text-sm leading-relaxed">
+              Weekly hands-on experiments, robotics builds, and coding
+              projects. STEM club members represent EagleNest at
+              the regional and national science fairs.
+            </p>
+          </div>
+
+          <!-- Debate & Reading -->
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-7
+                      hover:bg-white/10 transition-colors duration-200">
+            <div class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center
+                        justify-center mb-5" aria-hidden="true">
+              <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+              </svg>
+            </div>
+            <h3 class="font-heading text-white text-lg mb-2">
+              Debate &amp; Reading Programme
+            </h3>
+            <p class="text-sky-100/75 text-sm leading-relaxed">
+              Our debate team competes in the Kenya Secondary Schools Debate
+              Championship. The Accelerated Reader programme tracks and
+              celebrates reading milestones from Grade 1 upwards.
+            </p>
+          </div>
+
+          <!-- Counselling -->
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-7
+                      hover:bg-white/10 transition-colors duration-200">
+            <div class="w-12 h-12 rounded-xl bg-leaf-500/20 flex items-center
+                        justify-center mb-5" aria-hidden="true">
+              <svg class="w-6 h-6 text-leaf-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+              </svg>
+            </div>
+            <h3 class="font-heading text-white text-lg mb-2">
+              Pastoral Care &amp; Counselling
+            </h3>
+            <p class="text-sky-100/75 text-sm leading-relaxed">
+              A full-time qualified counsellor supports learners' social and
+              emotional wellbeing — a critical CBC component. Class teachers
+              also receive pastoral care training to spot early warning signs.
+            </p>
+          </div>
+
+        </div><!-- /support grid -->
+      </div>
+    </section><!-- /academic-support -->
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  6. DAILY LEARNING TIMELINE                      ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="daily-schedule"
+             aria-labelledby="schedule-heading"
+             class="py-20 px-4 bg-white">
+
+      <div class="max-w-4xl mx-auto">
+
+        <div class="text-center mb-12 reveal">
+          <span class="inline-block text-sky-600 text-xs font-semibold
+                       uppercase tracking-widest mb-3">A Day at EagleNest</span>
+          <h2 id="schedule-heading" class="font-heading text-ink mb-4">
+            Daily Learning Timeline
+          </h2>
+          <p class="text-ink/70 leading-relaxed max-w-xl mx-auto">
+            A structured, balanced day that alternates focused instruction,
+            collaborative activity, outdoor time, and rest — exactly as
+            CBC's whole-child philosophy requires.
+          </p>
+          <p class="text-xs text-ink/40 mt-2">
+            [REPLACE: Adjust times to match actual school timetable before publishing]
+          </p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline-track pl-14 md:pl-0 space-y-0 reveal">
+
+          <!-- Helper: each row has a time badge, a dot, and content card -->
+
+          <!-- 7:00 -->
+          <div class="relative flex md:grid md:grid-cols-2 md:gap-6
+                      items-start pb-8">
+            <div class="md:flex md:justify-end md:pr-8 hidden">
+              <div class="bg-sky-50 border border-sky-100 rounded-xl px-4 py-3
+                          shadow-soft-sm w-full max-w-xs">
+                <p class="font-heading text-sky-600 font-bold text-sm">7:00 am</p>
+                <p class="font-semibold text-ink text-sm mt-0.5">Gates Open &amp; Morning Prep</p>
+                <p class="text-ink/60 text-xs mt-1">
+                  Learners arrive; supervised morning study, reading, or
+                  outdoor warm-up activities.
+                </p>
+              </div>
+            </div>
+            <!-- Dot -->
+            <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2
+                        w-9 h-9 rounded-full bg-sky-500 shadow-soft
+                        flex items-center justify-center z-10 shrink-0"
+                 aria-hidden="true">
+              <span class="text-white text-xs font-bold">7</span>
+            </div>
+            <!-- Mobile content (always visible) / md hidden -->
+            <div class="md:hidden bg-sky-50 border border-sky-100 rounded-xl px-4 py-3
+                        shadow-soft-sm">
+              <p class="font-heading text-sky-600 font-bold text-sm">7:00 am</p>
+              <p class="font-semibold text-ink text-sm mt-0.5">Gates Open &amp; Morning Prep</p>
+              <p class="text-ink/60 text-xs mt-1">Supervised morning reading or outdoor warm-up.</p>
+            </div>
+            <!-- Desktop right (empty for odd) -->
+            <div class="hidden md:block"></div>
+          </div>
+
+          <!-- 8:00 -->
+          <div class="relative flex md:grid md:grid-cols-2 md:gap-6
+                      items-start pb-8">
+            <div class="hidden md:block"></div>
+            <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2
+                        w-9 h-9 rounded-full bg-leaf-500 shadow-soft
+                        flex items-center justify-center z-10"
+                 aria-hidden="true">
+              <span class="text-white text-xs font-bold">8</span>
+            </div>
+            <div class="bg-leaf-50 border border-leaf-100 rounded-xl px-4 py-3
+                        shadow-soft-sm md:pl-8">
+              <p class="font-heading text-leaf-600 font-bold text-sm">8:00 am</p>
+              <p class="font-semibold text-ink text-sm mt-0.5">Morning Assembly</p>
+              <p class="text-ink/60 text-xs mt-1">
+                School prayer, announcements, value-of-the-week reflection,
+                and national anthem. Builds community and belonging.
+              </p>
+            </div>
+          </div>
+
+          <!-- 8:20 -->
+          <div class="relative flex md:grid md:grid-cols-2 md:gap-6
+                      items-start pb-8">
+            <div class="md:flex md:justify-end md:pr-8 hidden">
+              <div class="bg-sky-50 border border-sky-100 rounded-xl px-4 py-3
+                          shadow-soft-sm w-full max-w-xs">
+                <p class="font-heading text-sky-600 font-bold text-sm">8:20 am</p>
+                <p class="font-semibold text-ink text-sm mt-0.5">Lesson Block 1</p>
+                <p class="text-ink/60 text-xs mt-1">
+                  Three 40-minute CBC lessons. Core learning areas including
+                  English, Mathematics, and Integrated Science.
+                </p>
+              </div>
+            </div>
+            <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2
+                        w-9 h-9 rounded-full bg-sky-500 shadow-soft
+                        flex items-center justify-center z-10"
+                 aria-hidden="true">
+              <span class="text-white text-xs font-bold" style="font-size:0.6rem">8:20</span>
+            </div>
+            <div class="md:hidden bg-sky-50 border border-sky-100 rounded-xl px-4 py-3
+                        shadow-soft-sm">
+              <p class="font-heading text-sky-600 font-bold text-sm">8:20 am</p>
+              <p class="font-semibold text-ink text-sm mt-0.5">Lesson Block 1</p>
+              <p class="text-ink/60 text-xs mt-1">Three 40-min core subject lessons.</p>
+            </div>
+            <div class="hidden md:block"></div>
+          </div>
+
+          <!-- 10:40 – Break -->
+          <div class="relative flex md:grid md:grid-cols-2 md:gap-6
+                      items-start pb-8">
+            <div class="hidden md:block"></div>
+            <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2
+                        w-9 h-9 rounded-full bg-amber-400 shadow-soft
+                        flex items-center justify-center z-10"
+                 aria-hidden="true">
+              <span class="text-white text-xs font-bold" style="font-size:0.6rem">10:40</span>
+            </div>
+            <div class="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3
+                        shadow-soft-sm md:pl-8">
+              <p class="font-heading text-amber-600 font-bold text-sm">10:40 am</p>
+              <p class="font-semibold text-ink text-sm mt-0.5">Mid-Morning Break &amp; Nutrition</p>
+              <p class="text-ink/60 text-xs mt-1">
+                30-minute supervised break. Learners eat their packed
+                lunch / tuck, play freely, and decompress.
+              </p>
+            </div>
+          </div>
+
+          <!-- 11:10 -->
+          <div class="relative flex md:grid md:grid-cols-2 md:gap-6
+                      items-start pb-8">
+            <div class="md:flex md:justify-end md:pr-8 hidden">
+              <div class="bg-leaf-50 border border-leaf-100 rounded-xl px-4 py-3
+                          shadow-soft-sm w-full max-w-xs">
+                <p class="font-heading text-leaf-600 font-bold text-sm">11:10 am</p>
+                <p class="font-semibold text-ink text-sm mt-0.5">Lesson Block 2</p>
+                <p class="text-ink/60 text-xs mt-1">
+                  Three more 40-minute lessons. Kiswahili, Social Studies,
+                  Creative Arts, or elective subjects.
+                </p>
+              </div>
+            </div>
+            <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2
+                        w-9 h-9 rounded-full bg-leaf-500 shadow-soft
+                        flex items-center justify-center z-10"
+                 aria-hidden="true">
+              <span class="text-white text-xs font-bold" style="font-size:0.6rem">11:10</span>
+            </div>
+            <div class="md:hidden bg-leaf-50 border border-leaf-100 rounded-xl px-4 py-3
+                        shadow-soft-sm">
+              <p class="font-heading text-leaf-600 font-bold text-sm">11:10 am</p>
+              <p class="font-semibold text-ink text-sm mt-0.5">Lesson Block 2</p>
+              <p class="text-ink/60 text-xs mt-1">Kiswahili, Social Studies, Creative Arts.</p>
+            </div>
+            <div class="hidden md:block"></div>
+          </div>
+
+          <!-- 1:00 – Lunch -->
+          <div class="relative flex md:grid md:grid-cols-2 md:gap-6
+                      items-start pb-8">
+            <div class="hidden md:block"></div>
+            <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2
+                        w-9 h-9 rounded-full bg-amber-400 shadow-soft
+                        flex items-center justify-center z-10"
+                 aria-hidden="true">
+              <span class="text-white text-xs font-bold">1</span>
+            </div>
+            <div class="bg-amber-50 border border-amber-100 rounded-xl px-4 py-3
+                        shadow-soft-sm md:pl-8">
+              <p class="font-heading text-amber-600 font-bold text-sm">1:00 pm</p>
+              <p class="font-semibold text-ink text-sm mt-0.5">Lunch &amp; Free Play</p>
+              <p class="text-ink/60 text-xs mt-1">
+                Hot lunch in the dining hall (optional). Free supervised
+                play, reading corner, and club sign-ups.
+              </p>
+            </div>
+          </div>
+
+          <!-- 1:40 – Lesson Block 3 -->
+          <div class="relative flex md:grid md:grid-cols-2 md:gap-6
+                      items-start pb-8">
+            <div class="md:flex md:justify-end md:pr-8 hidden">
+              <div class="bg-sky-50 border border-sky-100 rounded-xl px-4 py-3
+                          shadow-soft-sm w-full max-w-xs">
+                <p class="font-heading text-sky-600 font-bold text-sm">1:40 pm</p>
+                <p class="font-semibold text-ink text-sm mt-0.5">Lesson Block 3</p>
+                <p class="text-ink/60 text-xs mt-1">
+                  Two 40-minute lessons — Religious Education, Life Skills,
+                  or project-based learning activities.
+                </p>
+              </div>
+            </div>
+            <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2
+                        w-9 h-9 rounded-full bg-sky-500 shadow-soft
+                        flex items-center justify-center z-10"
+                 aria-hidden="true">
+              <span class="text-white text-xs font-bold" style="font-size:0.6rem">1:40</span>
+            </div>
+            <div class="md:hidden bg-sky-50 border border-sky-100 rounded-xl px-4 py-3
+                        shadow-soft-sm">
+              <p class="font-heading text-sky-600 font-bold text-sm">1:40 pm</p>
+              <p class="font-semibold text-ink text-sm mt-0.5">Lesson Block 3</p>
+              <p class="text-ink/60 text-xs mt-1">RE, Life Skills, or project work.</p>
+            </div>
+            <div class="hidden md:block"></div>
+          </div>
+
+          <!-- 3:00 – Co-curricular -->
+          <div class="relative flex md:grid md:grid-cols-2 md:gap-6
+                      items-start pb-8">
+            <div class="hidden md:block"></div>
+            <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2
+                        w-9 h-9 rounded-full bg-leaf-500 shadow-soft
+                        flex items-center justify-center z-10"
+                 aria-hidden="true">
+              <span class="text-white text-xs font-bold">3</span>
+            </div>
+            <div class="bg-leaf-50 border border-leaf-100 rounded-xl px-4 py-3
+                        shadow-soft-sm md:pl-8">
+              <p class="font-heading text-leaf-600 font-bold text-sm">3:00 pm</p>
+              <p class="font-semibold text-ink text-sm mt-0.5">Co-Curricular Activities</p>
+              <p class="text-ink/60 text-xs mt-1">
+                Sports, clubs, and enrichment (Mon–Fri). All learners
+                must participate in at least one structured activity per week.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4:30 – Dismissal -->
+          <div class="relative flex md:grid md:grid-cols-2 md:gap-6
+                      items-start">
+            <div class="md:flex md:justify-end md:pr-8 hidden">
+              <div class="bg-ink rounded-xl px-4 py-3 shadow-soft-sm w-full max-w-xs">
+                <p class="font-heading text-white font-bold text-sm">4:30 pm</p>
+                <p class="font-semibold text-sky-100 text-sm mt-0.5">Dismissal</p>
+                <p class="text-sky-100/70 text-xs mt-1">
+                  Learners collected by authorised persons. Extended
+                  care available until 5:30 pm (pre-booked).
+                </p>
+              </div>
+            </div>
+            <div class="absolute left-0 md:left-1/2 md:-translate-x-1/2
+                        w-9 h-9 rounded-full bg-ink shadow-soft
+                        flex items-center justify-center z-10"
+                 aria-hidden="true">
+              <span class="text-white text-xs font-bold" style="font-size:0.6rem">4:30</span>
+            </div>
+            <div class="md:hidden bg-ink rounded-xl px-4 py-3 shadow-soft-sm">
+              <p class="font-heading text-white font-bold text-sm">4:30 pm</p>
+              <p class="font-semibold text-sky-100 text-sm mt-0.5">Dismissal</p>
+              <p class="text-sky-100/70 text-xs mt-1">
+                Collected by authorised persons. Extended care until 5:30 pm.
+              </p>
+            </div>
+            <div class="hidden md:block"></div>
+          </div>
+
+        </div><!-- /timeline -->
+      </div>
+    </section><!-- /daily-schedule -->
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  7. DOWNLOADS – PDF CARDS                        ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="downloads"
+             aria-labelledby="downloads-heading"
+             class="py-20 px-4 bg-brand-gradient-soft">
+
+      <div class="max-w-6xl mx-auto">
+
+        <div class="text-center max-w-xl mx-auto mb-12 reveal">
+          <span class="inline-block text-sky-600 text-xs font-semibold
+                       uppercase tracking-widest mb-3">Resource Centre</span>
+          <h2 id="downloads-heading" class="font-heading text-ink mb-4">
+            Academic Downloads
+          </h2>
+          <p class="text-ink/70 leading-relaxed">
+            Download our prospectus, academic calendar, and curriculum
+            guides to help plan your child's learning journey.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal-stagger">
+
+          <!-- PDF Card helper:
+               - Coloured top bar, PDF icon, title, description, download button
+               - Links to assets/docs/ as specified
+          -->
+
+          <!-- School Prospectus -->
+          <a href="assets/docs/prospectus.pdf"
+             target="_blank"
+             rel="noopener"
+             class="pdf-card flex flex-col bg-white rounded-2xl overflow-hidden
+                    shadow-soft border border-sky-50 group"
+             aria-label="Download School Prospectus PDF">
+            <!-- Coloured top bar -->
+            <div class="h-2 bg-sky-500 w-full"></div>
+            <div class="p-6 flex flex-col flex-1">
+              <!-- PDF icon -->
+              <div class="w-12 h-12 rounded-xl bg-sky-50 border border-sky-100
+                          flex items-center justify-center mb-4 shrink-0"
+                   aria-hidden="true">
+                <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor"
+                     stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <p class="font-heading text-ink font-bold text-sm mb-1">School Prospectus</p>
+              <p class="text-ink/60 text-xs leading-relaxed flex-1">
+                Full overview of EagleNest's programmes, fees structure, and
+                admissions process. [REPLACE: 2025–2026 edition]
+              </p>
+              <div class="flex items-center gap-1.5 text-sky-600 text-xs font-semibold mt-4
+                          group-hover:text-sky-700 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                     stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                </svg>
+                Download PDF
+              </div>
+            </div>
+          </a>
+
+          <!-- Academic Calendar -->
+          <a href="assets/docs/calendar.pdf"
+             target="_blank"
+             rel="noopener"
+             class="pdf-card flex flex-col bg-white rounded-2xl overflow-hidden
+                    shadow-soft border border-leaf-50 group"
+             aria-label="Download Academic Calendar PDF">
+            <div class="h-2 bg-leaf-500 w-full"></div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="w-12 h-12 rounded-xl bg-leaf-50 border border-leaf-100
+                          flex items-center justify-center mb-4 shrink-0"
+                   aria-hidden="true">
+                <svg class="w-6 h-6 text-leaf-600" fill="none" stroke="currentColor"
+                     stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <p class="font-heading text-ink font-bold text-sm mb-1">Academic Calendar</p>
+              <p class="text-ink/60 text-xs leading-relaxed flex-1">
+                Term dates, school holidays, exam weeks, and key events for
+                the [REPLACE: 2025–2026] academic year.
+              </p>
+              <div class="flex items-center gap-1.5 text-leaf-600 text-xs font-semibold mt-4
+                          group-hover:text-leaf-700 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                     stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                </svg>
+                Download PDF
+              </div>
+            </div>
+          </a>
+
+          <!-- CBC Parent Guide -->
+          <a href="assets/docs/cbc-parent-guide.pdf"
+             target="_blank"
+             rel="noopener"
+             class="pdf-card flex flex-col bg-white rounded-2xl overflow-hidden
+                    shadow-soft border border-sky-50 group"
+             aria-label="Download CBC Parent Guide PDF">
+            <div class="h-2 bg-sky-500 w-full"></div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="w-12 h-12 rounded-xl bg-sky-50 border border-sky-100
+                          flex items-center justify-center mb-4 shrink-0"
+                   aria-hidden="true">
+                <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor"
+                     stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
+                </svg>
+              </div>
+              <p class="font-heading text-ink font-bold text-sm mb-1">CBC Parent Guide</p>
+              <p class="text-ink/60 text-xs leading-relaxed flex-1">
+                Plain-language explanation of the CBC framework, how your
+                child is assessed, and how to support learning at home.
+              </p>
+              <div class="flex items-center gap-1.5 text-sky-600 text-xs font-semibold mt-4
+                          group-hover:text-sky-700 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                     stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                </svg>
+                Download PDF
+              </div>
+            </div>
+          </a>
+
+          <!-- Fee Structure -->
+          <a href="assets/docs/fee-structure.pdf"
+             target="_blank"
+             rel="noopener"
+             class="pdf-card flex flex-col bg-white rounded-2xl overflow-hidden
+                    shadow-soft border border-leaf-50 group"
+             aria-label="Download Fee Structure PDF">
+            <div class="h-2 bg-leaf-500 w-full"></div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="w-12 h-12 rounded-xl bg-leaf-50 border border-leaf-100
+                          flex items-center justify-center mb-4 shrink-0"
+                   aria-hidden="true">
+                <svg class="w-6 h-6 text-leaf-600" fill="none" stroke="currentColor"
+                     stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/>
+                </svg>
+              </div>
+              <p class="font-heading text-ink font-bold text-sm mb-1">Fee Structure</p>
+              <p class="text-ink/60 text-xs leading-relaxed flex-1">
+                Termly fee schedule for all levels, including optional
+                extras. [REPLACE: 2025–2026 edition]. Payment plan options
+                are available.
+              </p>
+              <div class="flex items-center gap-1.5 text-leaf-600 text-xs font-semibold mt-4
+                          group-hover:text-leaf-700 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                     stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                </svg>
+                Download PDF
+              </div>
+            </div>
+          </a>
+
+        </div><!-- /pdf cards -->
+
+        <!-- Note about docs folder -->
+        <p class="text-center text-ink/40 text-xs mt-8 reveal">
+          All documents are hosted in <code class="bg-ink/5 px-1.5 py-0.5 rounded">assets/docs/</code>.
+          Replace placeholder PDFs with actual files before going live.
+        </p>
+
+      </div>
+    </section><!-- /downloads -->
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  8. CTA TO ADMISSIONS                            ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="academics-cta"
+             aria-labelledby="cta-heading"
+             class="py-20 px-4 bg-brand-gradient relative overflow-hidden">
+
+      <div class="absolute -top-16 -left-16 w-56 h-56 rounded-full
+                  bg-white/10 pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute -bottom-16 -right-16 w-72 h-72 rounded-full
+                  bg-white/10 pointer-events-none" aria-hidden="true"></div>
+
+      <div class="relative z-10 max-w-4xl mx-auto text-center reveal">
+
+        <span class="inline-block bg-white/20 text-white text-xs font-semibold
+                     px-3 py-1 rounded-full uppercase tracking-widest mb-5">
+          2026 Applications Open
+        </span>
+
+        <h2 id="cta-heading"
+            class="font-heading text-white text-3xl sm:text-4xl lg:text-5xl mb-5">
+          Ready to Enrol Your Child?
+        </h2>
+
+        <p class="text-white/90 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+          Give your child the EagleNest advantage — a CBC education delivered
+          with passion, purpose, and proven results. Spaces for January 2026
+          are filling fast.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="admissions.html"
+             class="inline-flex items-center gap-2 bg-white text-ink
+                    hover:bg-sky-50 font-bold px-8 py-4 rounded-full
+                    shadow-soft-lg transition-all duration-200 hover:scale-105 text-sm">
+            Start the Application
+            <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                 stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="contact.html"
+             class="inline-flex items-center gap-2 bg-transparent border-2 border-white/70
+                    text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-full
+                    transition-all duration-200 hover:scale-105 text-sm">
+            Speak to Our Academic Team
+          </a>
+        </div>
+
+      </div>
+    </section><!-- /cta -->
+
+
+  </main><!-- /#main-content -->
+
+
+  <!-- ═══ Footer (injected by components.js) ═══ -->
+  <div id="site-footer"></div>
+
+
+  <!-- ════════════════════════════════════════════════════
+       Scripts
+       ════════════════════════════════════════════════════ -->
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- ── Accessible Tab Panel Script ── -->
+  <script>
+    /**
+     * Tab panel controller
+     * ARIA pattern: https://www.w3.org/WAI/ARIA/apg/patterns/tabs/
+     *
+     * - Clicking a tab activates its panel and deactivates others.
+     * - Arrow Left / Arrow Right moves focus between tabs.
+     * - Home / End jump to first / last tab.
+     * - The active tab is indicated by aria-selected="true" and the
+     *   leaf-green bottom border via CSS [role="tab"][aria-selected="true"].
+     */
+    (function () {
+      const tablist  = document.querySelector('[role="tablist"]');
+      if (!tablist) return;
+
+      const tabs   = Array.from(tablist.querySelectorAll('[role="tab"]'));
+      const panels = tabs.map(t =>
+        document.getElementById(t.getAttribute('aria-controls'))
+      );
+
+      function activateTab(index) {
+        tabs.forEach((tab, i) => {
+          const isActive = i === index;
+          tab.setAttribute('aria-selected', String(isActive));
+          tab.tabIndex = isActive ? 0 : -1;
+        });
+        panels.forEach((panel, i) => {
+          if (i === index) {
+            panel.classList.remove('hidden');
+          } else {
+            panel.classList.add('hidden');
+          }
+        });
+      }
+
+      // Click handler
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => activateTab(index));
+      });
+
+      // Keyboard navigation (Left / Right / Home / End)
+      tablist.addEventListener('keydown', (e) => {
+        const currentIndex = tabs.findIndex(
+          t => t.getAttribute('aria-selected') === 'true'
+        );
+        let nextIndex = currentIndex;
+
+        switch (e.key) {
+          case 'ArrowRight':
+            nextIndex = (currentIndex + 1) % tabs.length;
+            break;
+          case 'ArrowLeft':
+            nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+            break;
+          case 'Home':
+            nextIndex = 0;
+            break;
+          case 'End':
+            nextIndex = tabs.length - 1;
+            break;
+          default:
+            return; // don't prevent default for other keys
+        }
+
+        e.preventDefault();
+        activateTab(nextIndex);
+        tabs[nextIndex].focus();
+      });
+
+      // Initialise: set tabIndex on non-active tabs
+      tabs.forEach((tab, i) => {
+        tab.tabIndex = i === 0 ? 0 : -1;
+      });
+
+      // Handle deep-link: if URL hash matches a tab anchor, activate it
+      const hash = window.location.hash.slice(1); // e.g. "primary"
+      if (hash) {
+        // Match hash against tab data-tab attribute OR panel id
+        const matchIndex = tabs.findIndex(
+          t => t.dataset.tab === hash ||
+               t.getAttribute('aria-controls') === 'panel-' + hash
+        );
+        if (matchIndex > -1) {
+          activateTab(matchIndex);
+        }
+      }
+    })();
+  </script>
+
+</body>
+</html>

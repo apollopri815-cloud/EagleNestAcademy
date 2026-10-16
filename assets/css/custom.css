@@ -1,0 +1,211 @@
+/*
+ * custom.css
+ * Hand-crafted base styles that complement the Tailwind config.
+ * Loaded after Tailwind so Tailwind's reset is already in place.
+ *
+ * Table of contents:
+ *  1. Smooth scrolling
+ *  2. Base body styles
+ *  3. Heading font rules
+ *  4. Brand gradient helpers
+ *  5. Focus / accessibility styles
+ *  6. Scroll-reveal animation classes  (.reveal, .reveal.visible)
+ *  7. Misc utilities
+ */
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 1. Smooth scrolling                                        */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 2. Base body styles                                        */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #0F2A43;          /* ink */
+  background-color: #ffffff;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 3. Heading font rules                                      */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+h1, h2, h3, h4, h5, h6,
+.font-heading {
+  font-family: 'Century Gothic', 'Questrial', sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #0F2A43; /* ink */
+}
+
+h1 { font-size: clamp(2rem,   5vw, 3.25rem); }
+h2 { font-size: clamp(1.5rem, 4vw, 2.5rem);  }
+h3 { font-size: clamp(1.25rem,3vw, 2rem);    }
+h4 { font-size: clamp(1.1rem, 2vw, 1.5rem);  }
+h5 { font-size: 1.125rem; }
+h6 { font-size: 1rem;     }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 4. Brand gradient helpers                                  */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* Sky (blue) → Leaf (green) — horizontal, left to right */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, #0EA5E9 0%, #22C55E 100%);
+}
+
+/* Subtle tinted background (for section backgrounds, cards) */
+.bg-brand-gradient-soft {
+  background: linear-gradient(135deg, #E0F2FE 0%, #DCFCE7 100%);
+}
+
+/* Text gradient (pair with bg-clip-text for headings) */
+.text-brand-gradient {
+  background: linear-gradient(135deg, #0EA5E9 0%, #22C55E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 5. Focus / accessibility styles                           */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* Remove default outline, replace with branded ring */
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px #F0F9FF, 0 0 0 5px #0EA5E9;
+  border-radius: 0.25rem;
+}
+
+/* Interactive elements get a pointer cursor */
+button,
+[role="button"],
+label[for],
+summary {
+  cursor: pointer;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 6. Scroll-reveal animation classes                        */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/*
+ * Add class="reveal" to any element.
+ * main.js IntersectionObserver adds "visible" when in view.
+ *
+ * Variants:
+ *   reveal              – fade + slide up (default)
+ *   reveal reveal-left  – slide in from left
+ *   reveal reveal-right – slide in from right
+ *   reveal reveal-scale – scale up from 95 %
+ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.reveal-left {
+  transform: translateX(-40px);
+}
+
+.reveal.reveal-right {
+  transform: translateX(40px);
+}
+
+.reveal.reveal-scale {
+  transform: scale(0.95);
+}
+
+/* Staggered children: add reveal-stagger to a parent */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Active state (set by IntersectionObserver in main.js) */
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal-stagger.visible > * {
+  opacity: 1;
+  transform: none;
+}
+
+/* Delay utilities for staggered children (0–5) */
+.reveal-stagger.visible > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal-stagger.visible > *:nth-child(2) { transition-delay: 0.15s; }
+.reveal-stagger.visible > *:nth-child(3) { transition-delay: 0.25s; }
+.reveal-stagger.visible > *:nth-child(4) { transition-delay: 0.35s; }
+.reveal-stagger.visible > *:nth-child(5) { transition-delay: 0.45s; }
+.reveal-stagger.visible > *:nth-child(6) { transition-delay: 0.55s; }
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-stagger > * {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 7. Misc utilities                                         */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* Active nav link indicator */
+.nav-link-active {
+  color: #22C55E;           /* leaf-500 */
+  font-weight: 600;
+  border-bottom: 2px solid #22C55E;
+  padding-bottom: 2px;
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px 0 rgba(15,42,67,0.12);
+}
+
+/* Visually hidden (a11y) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

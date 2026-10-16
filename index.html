@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <!-- ═══════════════════════════════════════════════════════
+       EagleNest Academy – Home Page
+       Kenyan CBC school · Nairobi, Kenya
+       ═══════════════════════════════════════════════════════ -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>EagleNest Academy | Soaring to Greater Heights – Nairobi, Kenya</title>
+  <meta name="description"
+        content="EagleNest Academy is a leading CBC school in Nairobi offering nurturing, excellence-driven education from Pre-Primary to Junior Secondary. Apply for admission today.">
+  <meta name="keywords"
+        content="CBC school Nairobi, Kenya primary school, Junior Secondary School, EagleNest Academy, best school Nairobi">
+  <meta name="author" content="EagleNest Academy">
+  <link rel="canonical" href="https://www.eaglenest.ac.ke/index.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="EagleNest Academy">
+  <meta property="og:title"       content="EagleNest Academy | Soaring to Greater Heights">
+  <meta property="og:description" content="A leading CBC school in Nairobi nurturing confident, compassionate, and academically excellent learners from Pre-Primary to Junior Secondary.">
+  <meta property="og:image"       content="assets/images/hero/og-image.jpg">
+  <meta property="og:url"         content="https://www.eaglenest.ac.ke/index.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="EagleNest Academy | Soaring to Greater Heights">
+  <meta name="twitter:description" content="A leading CBC school in Nairobi. CBC curriculum · Holistic development · Excellence since 2000.">
+  <meta name="twitter:image"       content="assets/images/hero/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon"             href="assets/images/icons/favicon.ico"          type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png" sizes="180x180">
+
+  <!-- Google Fonts: Questrial (heading fallback) + Montserrat (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+  <!-- Tailwind config MUST come before the CDN script -->
+  <script src="assets/js/tailwind-config.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom styles (base, reveal animations, gradients, etc.) -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <!-- Inline page-level tweaks -->
+  <style>
+    /* Hero image overlay gradient */
+    .hero-overlay {
+      background: linear-gradient(
+        105deg,
+        rgba(15,42,67,0.80) 0%,
+        rgba(15,42,67,0.55) 50%,
+        rgba(14,165,233,0.15) 100%
+      );
+    }
+
+    /* Mosaic grid heights */
+    .mosaic-tall  { grid-row: span 2; }
+
+    /* Testimonial card quote mark */
+    .quote-mark::before {
+      content: '\201C';
+      font-family: 'Century Gothic', 'Questrial', sans-serif;
+      font-size: 5rem;
+      line-height: 0;
+      color: #E0F2FE;
+      position: absolute;
+      top: 1.5rem;
+      left: 1.25rem;
+    }
+
+    /* Step connector line (admissions steps) */
+    @media (min-width: 768px) {
+      .step-connector::after {
+        content: '';
+        position: absolute;
+        top: 2rem;
+        left: 50%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, #0EA5E9, #22C55E);
+        z-index: 0;
+      }
+      .step-last::after { display: none; }
+    }
+  </style>
+</head>
+
+<body class="font-body text-ink bg-white antialiased">
+
+  <!-- ══════════════════════════════════════════════════════
+       Site header (injected by components.js)
+       ══════════════════════════════════════════════════════ -->
+  <div id="site-header"></div>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       MAIN CONTENT
+       ══════════════════════════════════════════════════════ -->
+  <main id="main-content" tabindex="-1">
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  1. HERO                                         ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="hero"
+             aria-labelledby="hero-heading"
+             class="relative min-h-[90vh] flex items-center overflow-hidden">
+
+      <!-- Background hero image -->
+      <div class="absolute inset-0">
+        <img src="assets/images/hero/hero-main.jpg"
+             alt="EagleNest Academy students in class, engaged in a CBC learning activity"
+             class="w-full h-full object-cover object-center"
+             loading="eager">
+        <!-- Dark gradient overlay for text legibility -->
+        <div class="absolute inset-0 hero-overlay" aria-hidden="true"></div>
+      </div>
+
+      <!-- Hero content -->
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+                  w-full py-20 md:py-28 grid lg:grid-cols-2 gap-12 items-center">
+
+        <!-- Left: text -->
+        <div>
+          <!-- Eyebrow label -->
+          <span class="inline-flex items-center gap-2 bg-leaf-500/20 border border-leaf-500/40
+                       text-leaf-100 text-xs font-semibold px-3 py-1 rounded-full
+                       uppercase tracking-widest mb-5 reveal">
+            <!-- Leaf/sprout icon -->
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+              <path fill-rule="evenodd"
+                    d="M5.5 2a.5.5 0 01.5.5v1h3.5A4.5 4.5 0 0114 8v1.268A4.5 4.5 0 0110.732 13H7v4.5a.5.5 0 01-1 0V13H4.5A4.5 4.5 0 010 8.5v-1A5.5 5.5 0 015.5 2z"
+                    clip-rule="evenodd"/>
+            </svg>
+            CBC Accredited · Nairobi, Kenya
+          </span>
+
+          <h1 id="hero-heading"
+              class="font-heading text-white text-4xl sm:text-5xl lg:text-6xl leading-tight mb-4 reveal">
+            Where Eagles
+            <span class="text-brand-gradient block">Dare to Soar.</span>
+          </h1>
+
+          <p class="text-sky-100 text-lg sm:text-xl max-w-xl leading-relaxed mb-8 reveal">
+            EagleNest Academy nurtures confident, compassionate, and academically
+            excellent learners — from Pre-Primary all the way through Junior Secondary.
+            Rooted in Kenyan values, ready for a global future.
+          </p>
+
+          <!-- CTA buttons -->
+          <div class="flex flex-wrap gap-4 reveal">
+            <a href="admissions.html"
+               class="inline-flex items-center gap-2 bg-leaf-500 hover:bg-leaf-600
+                      text-white font-semibold px-7 py-3.5 rounded-full
+                      shadow-soft-lg transition-all duration-200 hover:scale-105">
+              Apply Now
+              <!-- Arrow icon -->
+              <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                   stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+            <a href="contact.html#book-visit"
+               class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20
+                      text-white font-semibold px-7 py-3.5 rounded-full
+                      border border-white/30 backdrop-blur-sm
+                      transition-all duration-200 hover:scale-105">
+              <!-- Calendar icon -->
+              <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+              Book a Visit
+            </a>
+          </div>
+
+          <!-- Trust badges -->
+          <div class="flex flex-wrap items-center gap-4 mt-8 reveal">
+            <span class="flex items-center gap-1.5 text-sky-100 text-xs font-medium">
+              <svg class="w-4 h-4 text-leaf-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              KICD Approved Curriculum
+            </span>
+            <span class="flex items-center gap-1.5 text-sky-100 text-xs font-medium">
+              <svg class="w-4 h-4 text-leaf-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              TSC Registered Teachers
+            </span>
+            <span class="flex items-center gap-1.5 text-sky-100 text-xs font-medium">
+              <svg class="w-4 h-4 text-leaf-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              Founded 2000
+            </span>
+          </div>
+        </div>
+
+        <!-- Right: floating stat card -->
+        <div class="hidden lg:flex justify-center items-center">
+          <div class="bg-white/95 backdrop-blur-sm rounded-2xl shadow-soft-xl
+                      p-8 w-80 reveal reveal-right">
+            <!-- Card header -->
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-10 h-10 rounded-full bg-brand-gradient
+                          flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="font-heading text-ink text-sm font-semibold">2025 KCPE Results</p>
+                <p class="text-ink/50 text-xs">National Examinations</p>
+              </div>
+            </div>
+
+            <!-- Stats grid -->
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="bg-sky-50 rounded-xl p-3 text-center">
+                <p class="font-heading text-2xl text-sky-600 font-bold">98%</p>
+                <p class="text-xs text-ink/60 mt-0.5">Pass Rate</p>
+              </div>
+              <div class="bg-leaf-50 rounded-xl p-3 text-center">
+                <p class="font-heading text-2xl text-leaf-600 font-bold">340</p>
+                <p class="text-xs text-ink/60 mt-0.5">Top Score</p>
+              </div>
+              <div class="bg-leaf-50 rounded-xl p-3 text-center">
+                <p class="font-heading text-2xl text-leaf-600 font-bold">12</p>
+                <p class="text-xs text-ink/60 mt-0.5">Top-100 Students</p>
+              </div>
+              <div class="bg-sky-50 rounded-xl p-3 text-center">
+                <p class="font-heading text-2xl text-sky-600 font-bold">278</p>
+                <p class="text-xs text-ink/60 mt-0.5">Mean Score</p>
+              </div>
+            </div>
+
+            <!-- Mini CTA -->
+            <a href="admissions.html"
+               class="flex items-center justify-center gap-2 w-full
+                      bg-ink hover:bg-sky-600 text-white text-sm font-semibold
+                      py-2.5 rounded-full transition-colors duration-200">
+              Secure a Place for 2026
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor"
+                   stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /grid -->
+
+      <!-- Decorative bottom wave -->
+      <div class="absolute bottom-0 inset-x-0" aria-hidden="true">
+        <svg viewBox="0 0 1440 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+             class="w-full h-12 md:h-16" preserveAspectRatio="none">
+          <path d="M0 64L480 20L960 50L1440 10V64H0Z" fill="white"/>
+        </svg>
+      </div>
+    </section><!-- /hero -->
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  2. QUICK-FACTS STRIP – animated counters        ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="quick-facts"
+             aria-label="Quick facts about EagleNest Academy"
+             class="py-14 px-4 bg-white">
+
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 reveal-stagger">
+
+          <!-- Stat 1 -->
+          <div class="flex flex-col items-center text-center p-6 rounded-xl
+                      bg-sky-50 border border-sky-100 shadow-soft-sm card-hover">
+            <div class="w-12 h-12 rounded-full bg-sky-100 flex items-center
+                        justify-center mb-3" aria-hidden="true">
+              <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <p class="font-heading text-3xl sm:text-4xl text-sky-600 font-bold leading-none">
+              <span data-counter="1450" data-suffix="+">0</span>
+            </p>
+            <p class="text-sm text-ink/70 mt-2 font-medium">Enrolled Students</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="flex flex-col items-center text-center p-6 rounded-xl
+                      bg-leaf-50 border border-leaf-100 shadow-soft-sm card-hover">
+            <div class="w-12 h-12 rounded-full bg-leaf-100 flex items-center
+                        justify-center mb-3" aria-hidden="true">
+              <svg class="w-6 h-6 text-leaf-600" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
+              </svg>
+            </div>
+            <p class="font-heading text-3xl sm:text-4xl text-leaf-600 font-bold leading-none">
+              <span data-counter="95" data-suffix="+">0</span>
+            </p>
+            <p class="text-sm text-ink/70 mt-2 font-medium">Qualified Teachers</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="flex flex-col items-center text-center p-6 rounded-xl
+                      bg-sky-50 border border-sky-100 shadow-soft-sm card-hover">
+            <div class="w-12 h-12 rounded-full bg-sky-100 flex items-center
+                        justify-center mb-3" aria-hidden="true">
+              <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+              </svg>
+            </div>
+            <p class="font-heading text-3xl sm:text-4xl text-sky-600 font-bold leading-none">
+              <span data-counter="25">0</span>
+            </p>
+            <p class="text-sm text-ink/70 mt-2 font-medium">Years of Excellence</p>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="flex flex-col items-center text-center p-6 rounded-xl
+                      bg-leaf-50 border border-leaf-100 shadow-soft-sm card-hover">
+            <div class="w-12 h-12 rounded-full bg-leaf-100 flex items-center
+                        justify-center mb-3" aria-hidden="true">
+              <svg class="w-6 h-6 text-leaf-600" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <p class="font-heading text-3xl sm:text-4xl text-leaf-600 font-bold leading-none">
+              <span data-counter="98" data-suffix="%">0</span>
+            </p>
+            <p class="text-sm text-ink/70 mt-2 font-medium">National Exam Pass Rate</p>
+          </div>
+
+        </div><!-- /grid -->
+      </div>
+    </section><!-- /quick-facts -->
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  3. PRINCIPAL'S WELCOME                          ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="principals-welcome"
+             aria-labelledby="principal-heading"
+             class="py-20 px-4 bg-brand-gradient-soft">
+
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- Photo -->
+        <div class="relative reveal reveal-left">
+          <div class="rounded-2xl overflow-hidden shadow-soft-lg aspect-[4/5]">
+            <img src="assets/images/about/principal.jpg"
+                 alt="Mrs. Jane Wanjiku, Principal of EagleNest Academy, smiling in her office"
+                 class="w-full h-full object-cover object-top"
+                 loading="lazy">
+          </div>
+          <!-- Floating badge -->
+          <div class="absolute -bottom-5 -right-4 bg-white rounded-xl shadow-soft-lg
+                      px-5 py-3 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-leaf-500 flex items-center
+                        justify-center shrink-0" aria-hidden="true">
+              <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-heading text-ink text-xs font-bold leading-tight">Accredited</p>
+              <p class="text-ink/50 text-xs">Ministry of Education</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="reveal">
+          <!-- Section label -->
+          <span class="inline-block text-leaf-600 text-xs font-semibold
+                       uppercase tracking-widest mb-3">
+            Principal's Welcome
+          </span>
+
+          <h2 id="principal-heading" class="font-heading text-ink mb-5">
+            Building Tomorrow's Leaders, Today
+          </h2>
+
+          <p class="text-ink/80 leading-relaxed mb-4">
+            Welcome to EagleNest Academy. When parents entrust us with their children,
+            they are placing in our care the most precious gift they have. We do not
+            take that responsibility lightly.
+          </p>
+          <p class="text-ink/80 leading-relaxed mb-4">
+            Our Competency Based Curriculum journey is not merely about passing
+            examinations — it is about discovering each child's unique strengths,
+            building critical thinking, and instilling values that will anchor
+            them throughout life. At EagleNest, every learner matters.
+          </p>
+          <p class="text-ink/80 leading-relaxed mb-6">
+            I warmly invite you to visit our school, meet our passionate staff,
+            and see the EagleNest difference for yourself.
+          </p>
+
+          <!-- Signature block -->
+          <div class="flex items-center gap-4 border-t border-sky-200 pt-5">
+            <img src="assets/images/about/principal-signature.png"
+                 alt=""
+                 aria-hidden="true"
+                 class="h-12 opacity-70"
+                 onerror="this.style.display='none'">
+            <div>
+              <p class="font-heading text-ink font-bold text-sm">Mrs. Jane Wanjiku</p>
+              <p class="text-xs text-ink/50">B.Ed (Hons), MEd · Principal, EagleNest Academy</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /principals-welcome -->
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  4. PROGRAMME CARDS                              ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="programmes"
+             aria-labelledby="programmes-heading"
+             class="py-20 px-4 bg-white">
+
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Section header -->
+        <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+          <span class="inline-block text-sky-600 text-xs font-semibold
+                       uppercase tracking-widest mb-3">Our Programmes</span>
+          <h2 id="programmes-heading" class="font-heading text-ink mb-4">
+            A Pathway for Every Stage
+          </h2>
+          <p class="text-ink/70 leading-relaxed">
+            From the first day of Pre-Primary to the final term of Junior Secondary,
+            our CBC programmes are designed to challenge, inspire, and celebrate
+            every learner.
+          </p>
+        </div>
+
+        <!-- Cards grid -->
+        <div class="grid md:grid-cols-3 gap-8 reveal-stagger">
+
+          <!-- Card 1: Pre-Primary -->
+          <article class="rounded-2xl overflow-hidden shadow-soft border border-sky-50 card-hover
+                          flex flex-col bg-white"
+                   aria-labelledby="prog-preprimary">
+            <div class="aspect-[16/9] overflow-hidden">
+              <img src="assets/images/academics/pre-primary.jpg"
+                   alt="Pre-Primary pupils engaged in play-based CBC learning at EagleNest"
+                   class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                   loading="lazy">
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-7 h-7 rounded-full bg-sky-100 flex items-center
+                             justify-center shrink-0" aria-hidden="true">
+                  <svg class="w-3.5 h-3.5 text-sky-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+                  </svg>
+                </span>
+                <span class="text-sky-600 text-xs font-semibold uppercase tracking-wider">
+                  Ages 3 – 5
+                </span>
+              </div>
+              <h3 id="prog-preprimary" class="font-heading text-ink text-xl mb-2">
+                Pre-Primary School
+              </h3>
+              <p class="text-ink/70 text-sm leading-relaxed mb-5 flex-1">
+                Play-based learning aligned with the CBC Pre-Primary curriculum.
+                We build language, numeracy, social, and creative foundations
+                through structured discovery and joyful exploration.
+              </p>
+              <a href="academics.html#pre-primary"
+                 class="inline-flex items-center gap-1.5 text-sky-600 hover:text-sky-700
+                        text-sm font-semibold transition-colors">
+                Explore Programme
+                <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                     stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Primary -->
+          <article class="rounded-2xl overflow-hidden shadow-soft border border-leaf-50 card-hover
+                          flex flex-col bg-white"
+                   aria-labelledby="prog-primary">
+            <!-- Featured badge -->
+            <div class="relative aspect-[16/9] overflow-hidden">
+              <img src="assets/images/academics/primary.jpg"
+                   alt="Primary school students working on a CBC project at EagleNest Academy"
+                   class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                   loading="lazy">
+              <span class="absolute top-3 left-3 bg-leaf-500 text-white text-xs
+                           font-bold px-3 py-1 rounded-full shadow-soft-sm">
+                Most Popular
+              </span>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-7 h-7 rounded-full bg-leaf-100 flex items-center
+                             justify-center shrink-0" aria-hidden="true">
+                  <svg class="w-3.5 h-3.5 text-leaf-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z"/>
+                  </svg>
+                </span>
+                <span class="text-leaf-600 text-xs font-semibold uppercase tracking-wider">
+                  Grade 1 – 6
+                </span>
+              </div>
+              <h3 id="prog-primary" class="font-heading text-ink text-xl mb-2">
+                Primary School
+              </h3>
+              <p class="text-ink/70 text-sm leading-relaxed mb-5 flex-1">
+                A rich CBC journey through Lower and Upper Primary. Core learning
+                areas, environmental activities, creative arts, and mother tongue
+                integration build well-rounded, capable young Kenyans.
+              </p>
+              <a href="academics.html#primary"
+                 class="inline-flex items-center gap-1.5 text-leaf-600 hover:text-leaf-700
+                        text-sm font-semibold transition-colors">
+                Explore Programme
+                <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                     stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Junior Secondary -->
+          <article class="rounded-2xl overflow-hidden shadow-soft border border-sky-50 card-hover
+                          flex flex-col bg-white"
+                   aria-labelledby="prog-jss">
+            <div class="aspect-[16/9] overflow-hidden">
+              <img src="assets/images/academics/junior-secondary.jpg"
+                   alt="Junior Secondary students in a science lab at EagleNest Academy"
+                   class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                   loading="lazy">
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-7 h-7 rounded-full bg-sky-100 flex items-center
+                             justify-center shrink-0" aria-hidden="true">
+                  <svg class="w-3.5 h-3.5 text-sky-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.381z" clip-rule="evenodd"/>
+                  </svg>
+                </span>
+                <span class="text-sky-600 text-xs font-semibold uppercase tracking-wider">
+                  Grade 7 – 9
+                </span>
+              </div>
+              <h3 id="prog-jss" class="font-heading text-ink text-xl mb-2">
+                Junior Secondary School
+              </h3>
+              <p class="text-ink/70 text-sm leading-relaxed mb-5 flex-1">
+                Kenya's new Junior Secondary curriculum, delivered with specialist
+                teachers. STEM-focused with creative arts, social studies, and
+                robust co-curricular activities preparing students for Senior Secondary.
+              </p>
+              <a href="academics.html#junior-secondary"
+                 class="inline-flex items-center gap-1.5 text-sky-600 hover:text-sky-700
+                        text-sm font-semibold transition-colors">
+                Explore Programme
+                <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                     stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div><!-- /cards grid -->
+
+        <!-- View all CTA -->
+        <div class="text-center mt-10 reveal">
+          <a href="academics.html"
+             class="inline-flex items-center gap-2 border-2 border-sky-500 text-sky-600
+                    hover:bg-sky-500 hover:text-white font-semibold px-7 py-3 rounded-full
+                    transition-all duration-200">
+            View All Academic Programmes
+          </a>
+        </div>
+
+      </div>
+    </section><!-- /programmes -->
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  5. WHY CHOOSE EAGLENEST – 6 icon cards          ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="why-eaglenest"
+             aria-labelledby="why-heading"
+             class="py-20 px-4 bg-ink text-white overflow-hidden relative">
+
+      <!-- Background decoration -->
+      <div class="absolute inset-0 opacity-5 pointer-events-none" aria-hidden="true">
+        <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-sky-500"></div>
+        <div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-leaf-500"></div>
+      </div>
+
+      <div class="relative z-10 max-w-6xl mx-auto">
+
+        <!-- Section header -->
+        <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+          <span class="inline-block text-leaf-400 text-xs font-semibold
+                       uppercase tracking-widest mb-3">The EagleNest Difference</span>
+          <h2 id="why-heading" class="font-heading text-white mb-4">
+            Why Families Choose Us
+          </h2>
+          <p class="text-sky-100 leading-relaxed">
+            We combine academic rigour with holistic development — because great
+            education is about more than grades.
+          </p>
+        </div>
+
+        <!-- 6-card grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal-stagger">
+
+          <!-- 1. CBC-aligned curriculum -->
+          <div class="bg-white/5 hover:bg-white/10 border border-white/10
+                      rounded-2xl p-7 transition-colors duration-200 group">
+            <div class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center
+                        justify-center mb-5 group-hover:bg-sky-500/30 transition-colors"
+                 aria-hidden="true">
+              <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
+              </svg>
+            </div>
+            <h3 class="font-heading text-white text-lg mb-2">CBC-Aligned Curriculum</h3>
+            <p class="text-sky-100/80 text-sm leading-relaxed">
+              Fully aligned to the KICD Competency Based Curriculum, delivered by TSC-registered
+              teachers trained in CBC pedagogy and learner-centred approaches.
+            </p>
+          </div>
+
+          <!-- 2. Small class sizes -->
+          <div class="bg-white/5 hover:bg-white/10 border border-white/10
+                      rounded-2xl p-7 transition-colors duration-200 group">
+            <div class="w-12 h-12 rounded-xl bg-leaf-500/20 flex items-center
+                        justify-center mb-5 group-hover:bg-leaf-500/30 transition-colors"
+                 aria-hidden="true">
+              <svg class="w-6 h-6 text-leaf-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 2a2 2 0 11-4 0 2 2 0 014 0zM7 9a2 2 0 11-4 0 2 2 0 014 0z"/>
+              </svg>
+            </div>
+            <h3 class="font-heading text-white text-lg mb-2">Small Class Sizes</h3>
+            <p class="text-sky-100/80 text-sm leading-relaxed">
+              A maximum of 30 learners per class ensures every child receives
+              individual attention. Our teachers know each learner by name — and by strength.
+            </p>
+          </div>
+
+          <!-- 3. Safe, nurturing environment -->
+          <div class="bg-white/5 hover:bg-white/10 border border-white/10
+                      rounded-2xl p-7 transition-colors duration-200 group">
+            <div class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center
+                        justify-center mb-5 group-hover:bg-sky-500/30 transition-colors"
+                 aria-hidden="true">
+              <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <h3 class="font-heading text-white text-lg mb-2">Safe & Nurturing Environment</h3>
+            <p class="text-sky-100/80 text-sm leading-relaxed">
+              Our gated, CCTV-monitored campus and trained pastoral care team
+              ensure every child feels safe, valued, and emotionally supported
+              every single day.
+            </p>
+          </div>
+
+          <!-- 4. Co-curricular excellence -->
+          <div class="bg-white/5 hover:bg-white/10 border border-white/10
+                      rounded-2xl p-7 transition-colors duration-200 group">
+            <div class="w-12 h-12 rounded-xl bg-leaf-500/20 flex items-center
+                        justify-center mb-5 group-hover:bg-leaf-500/30 transition-colors"
+                 aria-hidden="true">
+              <svg class="w-6 h-6 text-leaf-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="font-heading text-white text-lg mb-2">Co-Curricular Excellence</h3>
+            <p class="text-sky-100/80 text-sm leading-relaxed">
+              Over 20 clubs and sports — football, volleyball, swimming, debate,
+              choir, drama, and more — discover and develop the hidden talent
+              in every learner.
+            </p>
+          </div>
+
+          <!-- 5. Modern facilities -->
+          <div class="bg-white/5 hover:bg-white/10 border border-white/10
+                      rounded-2xl p-7 transition-colors duration-200 group">
+            <div class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center
+                        justify-center mb-5 group-hover:bg-sky-500/30 transition-colors"
+                 aria-hidden="true">
+              <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              </svg>
+            </div>
+            <h3 class="font-heading text-white text-lg mb-2">Modern Facilities</h3>
+            <p class="text-sky-100/80 text-sm leading-relaxed">
+              Science labs, a digital library, ICT suites with internet connectivity,
+              a full-size sports field, and a purpose-built art studio — everything
+              a 21st-century learner needs.
+            </p>
+          </div>
+
+          <!-- 6. Strong parent partnership -->
+          <div class="bg-white/5 hover:bg-white/10 border border-white/10
+                      rounded-2xl p-7 transition-colors duration-200 group">
+            <div class="w-12 h-12 rounded-xl bg-leaf-500/20 flex items-center
+                        justify-center mb-5 group-hover:bg-leaf-500/30 transition-colors"
+                 aria-hidden="true">
+              <svg class="w-6 h-6 text-leaf-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+              </svg>
+            </div>
+            <h3 class="font-heading text-white text-lg mb-2">Strong Parent Partnership</h3>
+            <p class="text-sky-100/80 text-sm leading-relaxed">
+              Regular progress reports, parent-teacher forums, and a dedicated
+              parent portal keep families informed and actively involved in their
+              child's learning journey.
+            </p>
+          </div>
+
+        </div><!-- /6-card grid -->
+      </div>
+    </section><!-- /why-eaglenest -->
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  6. STUDENT LIFE MOSAIC                          ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="student-life"
+             aria-labelledby="student-life-heading"
+             class="py-20 px-4 bg-white">
+
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Section header -->
+        <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+          <span class="inline-block text-leaf-600 text-xs font-semibold
+                       uppercase tracking-widest mb-3">Life at EagleNest</span>
+          <h2 id="student-life-heading" class="font-heading text-ink mb-4">
+            More Than a Classroom
+          </h2>
+          <p class="text-ink/70 leading-relaxed">
+            Learning doesn't stop when the bell rings. From science fairs to sports
+            finals, our campus buzzes with curiosity, creativity, and community.
+          </p>
+        </div>
+
+        <!-- Mosaic grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-3 reveal"
+             style="grid-auto-rows: 200px;">
+
+          <!-- Tall left image -->
+          <div class="col-span-1 row-span-2 rounded-2xl overflow-hidden shadow-soft group">
+            <img src="assets/images/gallery/sports-day.jpg"
+                 alt="EagleNest students competing in the inter-house sports day relay race"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                 loading="lazy">
+          </div>
+
+          <!-- Top centre-left -->
+          <div class="rounded-2xl overflow-hidden shadow-soft group">
+            <img src="assets/images/gallery/science-fair.jpg"
+                 alt="Grade 6 learners presenting a CBC science project at the school fair"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                 loading="lazy">
+          </div>
+
+          <!-- Top centre-right -->
+          <div class="rounded-2xl overflow-hidden shadow-soft group">
+            <img src="assets/images/gallery/music-class.jpg"
+                 alt="Junior Secondary students in a music lesson playing traditional Kenyan instruments"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                 loading="lazy">
+          </div>
+
+          <!-- Tall right image -->
+          <div class="col-span-1 row-span-2 rounded-2xl overflow-hidden shadow-soft group">
+            <img src="assets/images/gallery/library.jpg"
+                 alt="A learner reading in the EagleNest digital library"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                 loading="lazy">
+          </div>
+
+          <!-- Bottom centre-left: label overlay -->
+          <div class="rounded-2xl overflow-hidden shadow-soft group relative">
+            <img src="assets/images/gallery/art-class.jpg"
+                 alt="Primary pupils in a creative arts session painting Kenyan landscapes"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                 loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent
+                        flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Creative Arts</span>
+            </div>
+          </div>
+
+          <!-- Bottom centre-right: label overlay -->
+          <div class="rounded-2xl overflow-hidden shadow-soft group relative">
+            <img src="assets/images/gallery/debate-club.jpg"
+                 alt="EagleNest debate club students during an inter-school competition"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                 loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent
+                        flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Debate Club</span>
+            </div>
+          </div>
+
+        </div><!-- /mosaic -->
+
+        <!-- CTA -->
+        <div class="text-center mt-10 reveal">
+          <a href="student-life.html"
+             class="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600
+                    text-white font-semibold px-7 py-3 rounded-full shadow-soft
+                    transition-all duration-200 hover:scale-105">
+            Explore Student Life
+            <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                 stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section><!-- /student-life -->
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  7. ADMISSIONS SUMMARY – 4 steps                 ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="admissions-summary"
+             aria-labelledby="admissions-heading"
+             class="py-20 px-4 bg-brand-gradient-soft">
+
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Section header -->
+        <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+          <span class="inline-block text-sky-600 text-xs font-semibold
+                       uppercase tracking-widest mb-3">Admissions 2026</span>
+          <h2 id="admissions-heading" class="font-heading text-ink mb-4">
+            Joining EagleNest is Simple
+          </h2>
+          <p class="text-ink/70 leading-relaxed">
+            Applications for January 2026 intake are now open. Follow these four
+            straightforward steps to secure your child's place.
+          </p>
+        </div>
+
+        <!-- Steps -->
+        <ol class="grid md:grid-cols-4 gap-8 reveal-stagger"
+            aria-label="Admissions process steps">
+
+          <!-- Step 1 -->
+          <li class="relative flex flex-col items-center text-center step-connector">
+            <div class="relative z-10 w-16 h-16 rounded-full bg-white shadow-soft
+                        flex items-center justify-center mb-4 border-2 border-sky-200">
+              <span class="font-heading text-sky-600 text-xl font-bold"
+                    aria-hidden="true">1</span>
+            </div>
+            <h3 class="font-heading text-ink text-base mb-2">Download the Form</h3>
+            <p class="text-ink/70 text-sm leading-relaxed">
+              Download the Application Form from our website or collect it
+              from the school office. It's free of charge.
+            </p>
+          </li>
+
+          <!-- Step 2 -->
+          <li class="relative flex flex-col items-center text-center step-connector">
+            <div class="relative z-10 w-16 h-16 rounded-full bg-white shadow-soft
+                        flex items-center justify-center mb-4 border-2 border-sky-200">
+              <span class="font-heading text-sky-600 text-xl font-bold"
+                    aria-hidden="true">2</span>
+            </div>
+            <h3 class="font-heading text-ink text-base mb-2">Submit Documents</h3>
+            <p class="text-ink/70 text-sm leading-relaxed">
+              Return the completed form with certified birth certificate, passport
+              photos, and most recent school report (if applicable).
+            </p>
+          </li>
+
+          <!-- Step 3 -->
+          <li class="relative flex flex-col items-center text-center step-connector">
+            <div class="relative z-10 w-16 h-16 rounded-full bg-white shadow-soft
+                        flex items-center justify-center mb-4 border-2 border-leaf-200">
+              <span class="font-heading text-leaf-600 text-xl font-bold"
+                    aria-hidden="true">3</span>
+            </div>
+            <h3 class="font-heading text-ink text-base mb-2">Assessment Day</h3>
+            <p class="text-ink/70 text-sm leading-relaxed">
+              Attend our friendly learner assessment and campus tour.
+              This helps us place your child in the right class for
+              their individual level.
+            </p>
+          </li>
+
+          <!-- Step 4 -->
+          <li class="relative flex flex-col items-center text-center step-last">
+            <div class="relative z-10 w-16 h-16 rounded-full bg-brand-gradient shadow-soft
+                        flex items-center justify-center mb-4">
+              <span class="font-heading text-white text-xl font-bold"
+                    aria-hidden="true">4</span>
+            </div>
+            <h3 class="font-heading text-ink text-base mb-2">Confirm Enrolment</h3>
+            <p class="text-ink/70 text-sm leading-relaxed">
+              Receive your offer letter, pay the required fees, and
+              collect your child's uniform list. Welcome to the EagleNest family!
+            </p>
+          </li>
+
+        </ol><!-- /steps -->
+
+        <!-- CTA -->
+        <div class="text-center mt-12 reveal">
+          <a href="admissions.html"
+             class="inline-flex items-center gap-2 bg-ink hover:bg-sky-700
+                    text-white font-semibold px-8 py-3.5 rounded-full shadow-soft
+                    transition-all duration-200 hover:scale-105">
+            Start Your Application
+            <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                 stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <p class="text-ink/50 text-xs mt-3">
+            Questions? Call us on
+            <a href="tel:+254XXXXXXXXX" class="text-sky-600 hover:underline font-medium">
+              +254 XXX XXX XXX
+            </a>
+          </p>
+        </div>
+
+      </div>
+    </section><!-- /admissions-summary -->
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  8. TESTIMONIALS                                 ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="testimonials"
+             aria-labelledby="testimonials-heading"
+             class="py-20 px-4 bg-white">
+
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Section header -->
+        <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+          <span class="inline-block text-sky-600 text-xs font-semibold
+                       uppercase tracking-widest mb-3">What Parents Say</span>
+          <h2 id="testimonials-heading" class="font-heading text-ink mb-4">
+            Voices from Our Community
+          </h2>
+          <p class="text-ink/70 leading-relaxed">
+            Don't take our word for it — hear from the families who have
+            walked this journey with us.
+          </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid md:grid-cols-3 gap-8 reveal-stagger">
+
+          <!-- Testimonial 1 -->
+          <figure class="relative bg-sky-50 rounded-2xl p-7 shadow-soft-sm quote-mark"
+                  aria-label="Testimonial from Grace Kamau">
+            <!-- Star rating -->
+            <div class="flex gap-1 mb-4 relative z-10" aria-label="5 out of 5 stars">
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <blockquote class="relative z-10">
+              <p class="text-ink/80 text-sm leading-relaxed mb-5 italic">
+                "My daughter joined EagleNest in Grade 1 and I have watched her blossom
+                into a confident reader and a fierce little scientist. The teachers
+                truly care — they know exactly where she is and what she needs next."
+              </p>
+            </blockquote>
+            <figcaption class="relative z-10 flex items-center gap-3">
+              <img src="assets/images/staff/parent-grace.jpg"
+                   alt="Grace Kamau, parent"
+                   class="w-10 h-10 rounded-full object-cover border-2 border-sky-200"
+                   loading="lazy"
+                   onerror="this.src='https://ui-avatars.com/api/?name=Grace+Kamau&background=E0F2FE&color=0284C7'">
+              <div>
+                <p class="font-semibold text-ink text-sm">Grace Kamau</p>
+                <p class="text-xs text-ink/50">Parent · Grade 3 Learner</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <!-- Testimonial 2 -->
+          <figure class="relative bg-leaf-50 rounded-2xl p-7 shadow-soft-sm quote-mark"
+                  aria-label="Testimonial from David Otieno">
+            <div class="flex gap-1 mb-4 relative z-10" aria-label="5 out of 5 stars">
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <blockquote class="relative z-10">
+              <p class="text-ink/80 text-sm leading-relaxed mb-5 italic">
+                "The transition to CBC worried us as parents, but EagleNest's teachers
+                explained every step of the way. My son won the regional science fair
+                in his first year at Junior Secondary. This school unlocks potential."
+              </p>
+            </blockquote>
+            <figcaption class="relative z-10 flex items-center gap-3">
+              <img src="assets/images/staff/parent-david.jpg"
+                   alt="David Otieno, parent"
+                   class="w-10 h-10 rounded-full object-cover border-2 border-leaf-200"
+                   loading="lazy"
+                   onerror="this.src='https://ui-avatars.com/api/?name=David+Otieno&background=DCFCE7&color=16A34A'">
+              <div>
+                <p class="font-semibold text-ink text-sm">David Otieno</p>
+                <p class="text-xs text-ink/50">Parent · Grade 8 Learner</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <!-- Testimonial 3 -->
+          <figure class="relative bg-sky-50 rounded-2xl p-7 shadow-soft-sm quote-mark"
+                  aria-label="Testimonial from Fatuma Hassan">
+            <div class="flex gap-1 mb-4 relative z-10" aria-label="5 out of 5 stars">
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <blockquote class="relative z-10">
+              <p class="text-ink/80 text-sm leading-relaxed mb-5 italic">
+                "As a working parent, the consistent communication from EagleNest
+                gives me peace of mind. The school portal, termly reports, and
+                parent forums keep me in the loop. I always know how my children
+                are doing — and why."
+              </p>
+            </blockquote>
+            <figcaption class="relative z-10 flex items-center gap-3">
+              <img src="assets/images/staff/parent-fatuma.jpg"
+                   alt="Fatuma Hassan, parent"
+                   class="w-10 h-10 rounded-full object-cover border-2 border-sky-200"
+                   loading="lazy"
+                   onerror="this.src='https://ui-avatars.com/api/?name=Fatuma+Hassan&background=E0F2FE&color=0284C7'">
+              <div>
+                <p class="font-semibold text-ink text-sm">Fatuma Hassan</p>
+                <p class="text-xs text-ink/50">Parent · Grades 2 &amp; 5 Learners</p>
+              </div>
+            </figcaption>
+          </figure>
+
+        </div><!-- /testimonial cards -->
+      </div>
+    </section><!-- /testimonials -->
+
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  9. GRADIENT CTA BANNER                          ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="cta-banner"
+             aria-labelledby="cta-heading"
+             class="py-20 px-4 bg-brand-gradient relative overflow-hidden">
+
+      <!-- Decorative circles -->
+      <div class="absolute -top-20 -left-20 w-64 h-64 rounded-full
+                  bg-white/10 pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute -bottom-16 -right-16 w-80 h-80 rounded-full
+                  bg-white/10 pointer-events-none" aria-hidden="true"></div>
+
+      <div class="relative z-10 max-w-4xl mx-auto text-center reveal">
+        <span class="inline-block bg-white/20 text-white text-xs font-semibold
+                     px-3 py-1 rounded-full uppercase tracking-widest mb-5">
+          2026 Intake Now Open
+        </span>
+
+        <h2 id="cta-heading" class="font-heading text-white text-3xl sm:text-4xl lg:text-5xl mb-5">
+          Give Your Child the Best Start.
+        </h2>
+
+        <p class="text-white/90 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+          Places fill quickly. Reserve your child's spot at EagleNest Academy
+          today and join a community of families who chose excellence.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="admissions.html"
+             class="inline-flex items-center gap-2 bg-white text-ink
+                    hover:bg-sky-50 font-bold px-8 py-4 rounded-full shadow-soft-lg
+                    transition-all duration-200 hover:scale-105 text-sm">
+            Apply for 2026 Intake
+            <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                 stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="contact.html"
+             class="inline-flex items-center gap-2 bg-transparent border-2 border-white/70
+                    text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-full
+                    transition-all duration-200 hover:scale-105 text-sm">
+            Talk to Our Admissions Team
+          </a>
+        </div>
+
+        <!-- Urgency note -->
+        <p class="text-white/70 text-xs mt-6">
+          Limited places available per class. Early applications are encouraged.
+        </p>
+      </div>
+
+    </section><!-- /cta-banner -->
+
+
+  </main><!-- /#main-content -->
+
+
+  <!-- ══════════════════════════════════════════════════════
+       Site footer (injected by components.js)
+       ══════════════════════════════════════════════════════ -->
+  <div id="site-footer"></div>
+
+
+  <!-- ════════════════════════════════════════════════════
+       Scripts – load order matters:
+         1. components.js  injects header, footer, WhatsApp
+         2. main.js        attaches all JS behaviour
+       ════════════════════════════════════════════════════ -->
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
