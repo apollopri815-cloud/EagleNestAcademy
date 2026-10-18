@@ -4,7 +4,7 @@ A responsive 6-page website for a fictional school, **Eaglenest Academy**, built
 
 **Live demo:** [https://github.com/apollopri815-cloud/EagleNestAcademy ]
 
-![Homepage screenshot](screenshots/home.png)
+   ![Homepage screenshot](screenshots/homepage_screenshot.png)
 
 ## Pages
 
