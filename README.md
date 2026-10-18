@@ -2,7 +2,7 @@
 
 A responsive 6-page website for a fictional school, **Eaglenest Academy**, built as a personal practice project to demonstrate front-end web development skills.
 
-**Live demo:** [add your GitHub Pages link here]
+**Live demo:** [https://github.com/apollopri815-cloud/EagleNestAcademy ]
 
 ![Homepage screenshot](screenshots/home.png)
 
